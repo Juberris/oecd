@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 rel. 2 (x64) (http://www.altova.com) by Accounting Division (OECD) -->
+<xsd:schema xmlns:cfw="urn:oecd:ties:cfw:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:iso="urn:oecd:ties:cfw:isocfwtypes:v1" targetNamespace="urn:oecd:ties:cfw:v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:import namespace="urn:oecd:ties:cfw:isocfwtypes:v1" schemaLocation="isocfwtypes_v1.0.xsd"/>
+	<!-- -->
+	<!--+++++++++++++++++++++++  String lenght types ++++++++++++++++++++++++++++++++++++++ -->
+	<!-- -->
+	<!-- Defines a string with minimum length 1 and maximum length of 10 -->
+	<xsd:simpleType name="StringMin1Max10_Type">
+		<xsd:annotation>
+			<xsd:documentation>Defines a string with minimum length 1 and maximum length of 10</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- -->
+	<!-- Defines a string with minimum length 1 and maximum length of 170 -->
+	<xsd:simpleType name="StringMin1Max170_Type">
+		<xsd:annotation>
+			<xsd:documentation>Defines a string with minimum length 1 and maximum length of 170</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="170"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- -->
+	<!-- Defines a string with minimum length 1 and maximum length of 255 -->
+	<xsd:simpleType name="StringMin1Max255_Type">
+		<xsd:annotation>
+			<xsd:documentation>Defines a string with minimum length 1 and maximum length of 400</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="255"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- -->
+	<!-- Defines a string with minimum length 1 and maximum length of 4000 -->
+	<xsd:simpleType name="StringMin1Max4000_Type">
+		<xsd:annotation>
+			<xsd:documentation>Defines a string with minimum length 1 and maximum length of 4000</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="4000"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- -->
+	<!--+++++++++++++++++++++++  Reusable Simple types ++++++++++++++++++++++++++++++++++++++ -->
+	<!-- Message type definitions -->
+	<xsd:simpleType name="MessageType_EnumType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Message type defines the type of reporting</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DTCAEOI">
+				<xsd:annotation>
+					<xsd:documentation>DTC AEOI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRFreeDT">
+				<xsd:annotation>
+					<xsd:documentation>EOIR free format - Direct Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRFreeIT">
+				<xsd:annotation>
+					<xsd:documentation>EOIR free format - Indirect Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRFreeTCR">
+				<xsd:annotation>
+					<xsd:documentation>EOIR free format - Tax collection and recovery</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRStructDT">
+				<xsd:annotation>
+					<xsd:documentation>EOIR structured format (e-forms) - Direct Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRStructIT">
+				<xsd:annotation>
+					<xsd:documentation>EOIR structured format (e-forms) - Indirect Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EOIRStructTCR">
+				<xsd:annotation>
+					<xsd:documentation>EOIR structured format (e-forms) - Tax collection and recovery</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponFreeDT">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges free format - Direct Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponFreeIT">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges free format - Indirect Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponFreeTCR">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges free format - Tax collection and recovery</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponStructDT">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges structured format (e-forms) - Direct Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponStructIT">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges structured format (e-forms) - Indirect Tax</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SponStructTCR">
+				<xsd:annotation>
+					<xsd:documentation>Spontaneous exchanges structured format (e-forms) - Tax collection and recovery</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JointAudits">
+				<xsd:annotation>
+					<xsd:documentation>Joint Audits</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JITSIC">
+				<xsd:annotation>
+					<xsd:documentation>JITSIC</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MAP">
+				<xsd:annotation>
+					<xsd:documentation>MAP</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>Other exchanges under international tax agreements</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  -->
+	<!-- File Format -->
+	<xsd:simpleType name="FileFormat_EnumType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="TXT">
+				<xsd:annotation>
+					<xsd:documentation>Plain Text</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PDF">
+				<xsd:annotation>
+					<xsd:documentation>PDF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RTF">
+				<xsd:annotation>
+					<xsd:documentation>Rich Text Format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JPG">
+				<xsd:annotation>
+					<xsd:documentation>Picture in JPEG Format</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DOC">
+				<xsd:annotation>
+					<xsd:documentation>Word</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="XLS">
+				<xsd:annotation>
+					<xsd:documentation>Excel</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DOCX">
+				<xsd:annotation>
+					<xsd:documentation>Word 2016 plus</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="XLSX">
+				<xsd:annotation>
+					<xsd:documentation>Excel 2016 plus</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="STF">
+				<xsd:annotation>
+					<xsd:documentation>STF</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  -->
+	<!-- Binary Encoding Scheme -->
+	<xsd:simpleType name="BinaryEncodingScheme_EnumType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="NONE">
+				<xsd:annotation>
+					<xsd:documentation>No Special Encoding</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BASE64">
+				<xsd:annotation>
+					<xsd:documentation>Base64 Encoded</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  -->
+	<!--++++++++++++++++++ Reusable Complex types +++++++++++++++++++++++++++++++++++++ -->
+	<!-- Message specification: Data identifying and describing the message as a whole -->
+	<xsd:complexType name="MessageSpec_Type">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Information in the message header identifies the Tax Administration that is sending the message.  It specifies when the message was created, what period (normally a year) the report is for, and the nature of the report (original, corrected, supplemental, etc).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="TransmittingCountry" type="iso:CountryCode_Type"/>
+			<xsd:element name="ReceivingCountry" type="iso:CountryCode_Type"/>
+			<xsd:element name="MessageType" type="cfw:MessageType_EnumType"/>
+			<xsd:element name="Warning" type="cfw:StringMin1Max4000_Type" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">Free text expressing the restrictions for use of the information this
+message contains and the legal framework under which it is given</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Contact" type="cfw:StringMin1Max4000_Type" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">All necessary contact information about persons responsible for and
+involved in the processing of the data transmitted in this message, both legally and technically. Free text as this is not
+intended for automatic processing. </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="MessageRefId" type="cfw:StringMin1Max170_Type">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">Unique identifier for this CTS File Wrapper message</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Timestamp" type="xsd:dateTime"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- -->
+	<!-- File Attach Type -->
+	<xsd:complexType name="FileAttach_Type">
+		<xsd:sequence>
+			<xsd:element name="FileName" type="cfw:StringMin1Max255_Type"/>
+			<xsd:element name="FileFormatCd" type="cfw:FileFormat_EnumType"/>
+			<xsd:element name="BinaryEncodingSchemeCd" type="cfw:BinaryEncodingScheme_EnumType"/>
+			<xsd:element name="FileWrapper" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- -->
+	<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Schema  element ++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- -->
+	<!-- CTS File Wrapper structure  -->
+	<xsd:element name="CTSFileWrapper_OECD">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="MessageSpec" type="cfw:MessageSpec_Type"/>
+				<xsd:element name="FileAttach" type="cfw:FileAttach_Type" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="version" type="cfw:StringMin1Max10_Type">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">CTS File Wrapper Version</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<!-- -->
+</xsd:schema>
