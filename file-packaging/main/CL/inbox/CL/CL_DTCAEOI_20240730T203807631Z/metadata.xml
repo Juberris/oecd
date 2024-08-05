@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sfm:CTSSenderFileMetadata xmlns:iso="urn:oecd:ties:isoctstypes:v1" xmlns:sfm="urn:oecd:ctssenderfilemetadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sfm:CTSSenderCountryCd>CL</sfm:CTSSenderCountryCd>
+    <sfm:CTSReceiverCountryCd>CL</sfm:CTSReceiverCountryCd>
+    <sfm:CTSCommunicationTypeCd>DTCAEOI</sfm:CTSCommunicationTypeCd>
+    <sfm:SenderFileId>CL_CL_DTCAEOI_CL2024CLd34b054462a04965be78e35581495c66</sfm:SenderFileId>
+    <sfm:FileFormatCd>XML</sfm:FileFormatCd>
+    <sfm:BinaryEncodingSchemeCd>NONE</sfm:BinaryEncodingSchemeCd>
+    <sfm:FileCreateTs>2024-07-30T20:38:16Z</sfm:FileCreateTs>
+    <sfm:TaxYear>2024</sfm:TaxYear>
+    <sfm:FileRevisionInd>false</sfm:FileRevisionInd>
+    <sfm:SenderContactEmailAddressTxt>catherine.figueroa@sii.cl</sfm:SenderContactEmailAddressTxt>
+</sfm:CTSSenderFileMetadata>

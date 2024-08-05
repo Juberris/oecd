@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<STF_OECD xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:oecd:ties:stf:v2.2 stfdirect-2.2.xsd" version="2.0" xmlns="urn:oecd:ties:stf:v2.2">
+  <MessageSpec>
+    <SendingCountry>AR</SendingCountry>
+    <ReceivingCountry>CL</ReceivingCountry>
+    <Warning>Confidential: Automatic Exchange of Information</Warning>
+    <Contact>autoridadcompetente@afip.gob.ar</Contact>
+    <MessageRefId>ARCL20221223-150623</MessageRefId>
+    <TaxYearList>2021-12-31</TaxYearList>
+  </MessageSpec>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300001</DocRefId>
+    </DocSpec>
+    
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-09-15</PaymentDate>
+        <MonAmnt currCode="ARS">404634</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-09-15</PaymentDate>
+        <MonAmnt currCode="ARS">127460</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    
+    <OtherInfo />
+  </STF_DIRECT>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300002</DocRefId>
+    </DocSpec>
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-09-15</PaymentDate>
+        <MonAmnt currCode="ARS">16568475</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-09-15</PaymentDate>
+        <MonAmnt currCode="ARS">5219069</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    <OtherInfo />
+  </STF_DIRECT>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300003</DocRefId>
+    </DocSpec>
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-04-14</PaymentDate>
+        <MonAmnt currCode="ARS">14830604</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-04-14</PaymentDate>
+        <MonAmnt currCode="ARS">4671640</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    <OtherInfo />
+  </STF_DIRECT>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300004</DocRefId>
+    </DocSpec>
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-07-15</PaymentDate>
+        <MonAmnt currCode="ARS">15293866</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-07-15</PaymentDate>
+        <MonAmnt currCode="ARS">4817568</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    <OtherInfo />
+  </STF_DIRECT>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300005</DocRefId>
+    </DocSpec>
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-07-15</PaymentDate>
+        <MonAmnt currCode="ARS">9517</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-07-15</PaymentDate>
+        <MonAmnt currCode="ARS">2998</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    <OtherInfo />
+  </STF_DIRECT>
+  <STF_DIRECT version="1.0">
+    <DocSpec>
+      <DocTypeIndic>1</DocTypeIndic>
+      <DocRefId>ARCL2022122300006</DocRefId>
+    </DocSpec>
+    <RecipientBeneficialOwner oecdLegalType="02">
+      <ResCountryCode>CL</ResCountryCode>
+      <PartyId partyIdType="IdNo" issuedBy="CL">55000000034</PartyId>
+      <Name nameType="legal">
+        <NameFree>1600 ACC CHILE ASESORIAS Y SERV LTD</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>CL</CountryCode>
+        <AddressFree>AVVITACURA 2939 OFIC 2502 LASCONDES</AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>0001-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </RecipientBeneficialOwner>
+    <ActualPayer oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1901-01-01</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </ActualPayer>
+    <PayerAgentOrIntermediary oecdLegalType="02">
+      <ResCountryCode>AR</ResCountryCode>
+      <PartyId partyIdType="TIN" issuedBy="AR">33610006189</PartyId>
+      <Name nameType="legal">
+        <NameFree>ACCENTURE SOCIEDAD DE RESPONSABILIDAD LIMITADA</NameFree>
+      </Name>
+      <Address legalAddressType="residentialOrBusiness">
+        <CountryCode>AR</CountryCode>
+        <AddressFree>24 DE NOVIEMBRE 2120     </AddressFree>
+      </Address>
+      <PersData>
+        <LegalPersData>
+          <FoundDate>1959-09-17</FoundDate>
+        </LegalPersData>
+      </PersData>
+    </PayerAgentOrIntermediary>
+    <PaymentData>
+      <TaxYearEnd>2021-12-31</TaxYearEnd>
+      <OECDPaymentType>21</OECDPaymentType>
+      <SpecificPaymentType />
+      <Payment paymentQlf="gip">
+        <PaymentDate>2021-01-15</PaymentDate>
+        <MonAmnt currCode="ARS">11353609</MonAmnt>
+      </Payment>
+      <Payment paymentQlf="twh">
+        <PaymentDate>2021-01-15</PaymentDate>
+        <MonAmnt currCode="ARS">3576387</MonAmnt>
+        <TaxRate>32</TaxRate>
+      </Payment>
+    </PaymentData>
+    <OtherInfo />
+  </STF_DIRECT>
+ </STF_OECD>

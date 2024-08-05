@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CTSSenderFileMetadata xmlns="urn:oecd:ctssenderfilemetadata">
+    <CTSSenderCountryCd>ES</CTSSenderCountryCd>
+    <CTSReceiverCountryCd>CL</CTSReceiverCountryCd>
+    <CTSCommunicationTypeCd>DTCAEOIStatus</CTSCommunicationTypeCd>
+    <SenderFileId>ES_CL_DTCAEOIStatus_DTCAEOIStatusESCL2024-08-01T18:11:56.2717151550.10534065784595048</SenderFileId>
+    <FileCreateTs>2024-08-01T18:45:02Z</FileCreateTs>
+    <FileRevisionInd>false</FileRevisionInd>
+</CTSSenderFileMetadata>

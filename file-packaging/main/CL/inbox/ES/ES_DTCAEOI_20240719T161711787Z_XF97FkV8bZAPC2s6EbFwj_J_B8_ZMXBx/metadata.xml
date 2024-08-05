@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CTSSenderFileMetadata xmlns="urn:oecd:ctssenderfilemetadata">
+    <CTSSenderCountryCd>ES</CTSSenderCountryCd>
+    <CTSReceiverCountryCd>CL</CTSReceiverCountryCd>
+    <CTSCommunicationTypeCd>DTCAEOI</CTSCommunicationTypeCd>
+    <SenderFileId>ES_CL_DTCAEOI_DTCAEOIESCL2024-06-25T14:15:03.0899251970.0042926780793609565_001</SenderFileId>
+    <FileCreateTs>2024-07-19T16:17:11Z</FileCreateTs>
+    <FileRevisionInd>false</FileRevisionInd>
+</CTSSenderFileMetadata>

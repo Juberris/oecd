@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8"?><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#CTS"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>BflvPe0x+CvRYV2SRJo3yoU7po7yKiq8lUn0AKnrtDo=</DigestValue></Reference></SignedInfo><SignatureValue>QcIC0BeQ+VmjtQS0uU4JwjRdEJ1FgY9y7HK07tz7ZoTZVRCX4KXEGNKFHLYu16fhQQ+2ThgqH1g0nYhySK1mtetjYa8GuaB0ter0WvPCM3yVAK8fxW6tkNuHEQdfHuW68p10W+RQpyD3qNRweejz8iA+GBWCkx9/B8gvAeZ66Q/KejFczafQtrA6fOY1TEO++5gCx1YZ/N7nL5G87QybZGN2jqiEu813cFRllC5CZpbkwoiAX9zDEMFBqFjnG7bLhuRcJFgQb/ECIbgj1Vk1Q/U7UKmudbW7k2JO9LTjCMdu9bbn7iHQxTppBbUYME4aQZiMEn0FBbYkAlmOuUb9ljQME1gtu/IViraxAo/EPKblELsgAyBT+CLWsGho8vC2u5VATY/Fo5+zNgTYSoNYthSU4vMMtfX1rzTJs2Atlr2gX9DrluaqBWrHP0AYYxNJkKfbDDDbjLTWHiP2KuzRht/hDihWvxLdkKWg4xw6yXBICvXWOEl9/t9u2SvX4Zcbtfc72kS1nFaZ2HEfeR/xZ5wA+aEOI8+qx+mBymtXVWj84vDL477wqwoPqE/84PNomqqvUEMZcj4nAO94DCosSw98fOqUw4ThTTM61GKBBPF8SJVG8IhxxfLP1fV+U75rKz2ICZXM+boBPBquQmRrM2OtctbNzVfOa3Qd4rzJNp8=</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo><Object Id="CTS"><CBC_OECD xmlns="urn:oecd:ties:cbc:v2" version="2.0" xmlns:ns2="urn:oecd:ties:cbcstf:v5">
+	<MessageSpec>
+		<TransmittingCountry>LU</TransmittingCountry>
+		<ReceivingCountry>CL</ReceivingCountry>
+		<MessageType>CBC</MessageType>
+		<Language>EN</Language>
+		<Contact>CBCR@co.etat.lu</Contact>
+		<MessageRefId>LU2023e4eab81b-fac2-44d8-ab70-eb34b4b7a24b</MessageRefId>
+		<MessageTypeIndic>CBC401</MessageTypeIndic>
+		<ReportingPeriod>2023-03-31</ReportingPeriod>
+		<Timestamp>2024-06-18T12:04:08.587</Timestamp>
+	</MessageSpec>
+	<CbcBody>
+		<ReportingEntity>
+			<Entity>
+				<ResCountryCode>LU</ResCountryCode>
+				<TIN>20102240082</TIN>
+				<IN>B22573</IN>
+				<Name>Amas Holding SPF</Name>
+				<Address>
+					<CountryCode>LU</CountryCode>
+					<AddressFix>
+						<Street>route d'Esch</Street>
+						<BuildingIdentifier>412F</BuildingIdentifier>
+						<PostCode>1471</PostCode>
+						<City>Luxembourg</City>
+						<CountrySubentity>LU</CountrySubentity>
+					</AddressFix>
+				</Address>
+			</Entity>
+			<NameMNEGroup>Amas Holding SPF</NameMNEGroup>
+			<ReportingRole>CBC701</ReportingRole>
+			<ReportingPeriod>
+				<StartDate>2022-04-01</StartDate>
+				<EndDate>2023-03-31</EndDate>
+			</ReportingPeriod>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023bcedacfc-e498-4c5c-a91a-f6d9483dd63f</ns2:DocRefId>
+			</DocSpec>
+		</ReportingEntity>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023CA-b1159816-be4b-4777-b9be-4a3add81bfb8</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>CA</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">2537</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">2537</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-56074</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">6250</Capital>
+				<Earnings currCode="GBP">-51525</Earnings>
+				<NbEmployees>1</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CA</ResCountryCode>
+					<TIN>773823000RT0001</TIN>
+					<Name>Hinduja Tech Canada Inc.</Name>
+					<Address>
+						<CountryCode>CA</CountryCode>
+						<AddressFix>
+							<PostCode>QC H7T2R3</PostCode>
+							<City>LAVAL</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023JP-46072b52-cc3e-4bb4-9e28-a7aaa7f6e6c0</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>JP</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-15651</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">-358530</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>JP</ResCountryCode>
+					<TIN>7-7001-5007-0030</TIN>
+					<Name>Hinduja Tech Limited - Japan branch PE</Name>
+					<Address>
+						<CountryCode>JP</CountryCode>
+						<AddressFix>
+							<PostCode>105-0012</PostCode>
+							<City>Tokyo</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023NG-1e79602e-7acf-4e11-8d13-53f1c418fb9a</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>NG</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">1249356</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">1249356</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">91078</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">18945</Capital>
+				<Earnings currCode="GBP">-98663</Earnings>
+				<NbEmployees>1</NbEmployees>
+				<Assets currCode="GBP">461512</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>NG</ResCountryCode>
+					<TIN>11692125-0001</TIN>
+					<Name>ASHOK LEYLAND NIGERIA LIMITED</Name>
+					<Address>
+						<CountryCode>NG</CountryCode>
+						<AddressFix>
+							<City>Lagos</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023ZA-bb55fa19-cdc2-4907-af03-f888571b81ec</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>ZA</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">279031</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">279031</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-210910</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>1</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>ZA</ResCountryCode>
+					<TIN>2001/001428/10</TIN>
+					<Name>Ashok Leyland Limited - South Africa branch PE</Name>
+					<Address>
+						<CountryCode>ZA</CountryCode>
+						<AddressFix>
+							<PostCode>26029</PostCode>
+							<City>Jet Park</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023CN-ed63f53b-9676-4811-ab44-a56c4c3fcb64</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>CN</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">5076619</Unrelated>
+					<Related currCode="GBP">73265</Related>
+					<Total currCode="GBP">5149884</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-596766</ProfitOrLoss>
+				<TaxPaid currCode="GBP">5621</TaxPaid>
+				<TaxAccrued currCode="GBP">5621</TaxAccrued>
+				<Capital currCode="GBP">1340481</Capital>
+				<Earnings currCode="GBP">-1604848</Earnings>
+				<NbEmployees>34</NbEmployees>
+				<Assets currCode="GBP">868734</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CN</ResCountryCode>
+					<TIN>91320585699381782F</TIN>
+					<Name>Albonair Automotive Technology Co. Ltd</Name>
+					<Address>
+						<CountryCode>CN</CountryCode>
+						<AddressFix>
+							<PostCode>215400</PostCode>
+							<City>Taicang</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CN</ResCountryCode>
+					<TIN>91310000664321130C </TIN>
+					<Name>Ashok Leyland Limited -  Shanghai representative Office</Name>
+					<Address>
+						<CountryCode>CN</CountryCode>
+						<AddressFix>
+							<PostCode>200051</PostCode>
+							<City>Shangai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC513</BizActivities>
+				<OtherEntityInfo>Liaison office
+</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CN</ResCountryCode>
+					<TIN>9131000MA1FPLCL4K</TIN>
+					<Name>Hinduja Tech (Shanghai) Co Limited</Name>
+					<Address>
+						<CountryCode>CN</CountryCode>
+						<AddressFix>
+							<City>Huangpu District</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023CZ-86aa1bff-4e2b-4e35-adf6-2207acfac7b9</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>CZ</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-605</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">70239</Capital>
+				<Earnings currCode="GBP">-16561</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CZ</ResCountryCode>
+					<TIN>NOTIN</TIN>
+					<Name>Drive System Design s.r.o, Czech Republic</Name>
+					<Address>
+						<CountryCode>CZ</CountryCode>
+						<AddressFix>
+							<PostCode>110 00</PostCode>
+							<City>Prague </City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023MX-5ec0d0e6-d063-4606-a737-cf943f91e7cb</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>MX</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">1781889</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">1781889</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">394607</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">394464</Earnings>
+				<NbEmployees>14</NbEmployees>
+				<Assets currCode="GBP">418</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MX</ResCountryCode>
+					<TIN>201800171286</TIN>
+					<Name>Hinduja Tech Limited - Mexico Branch PE</Name>
+					<Address>
+						<CountryCode>MX</CountryCode>
+						<AddressFix>
+							<PostCode>64860</PostCode>
+							<City>Monterrey</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023AU-801b175e-b158-4d47-a7cb-d388cb4d5a4a</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>AU</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">0</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>AU</ResCountryCode>
+					<TIN>NOTIN</TIN>
+					<Name>Optare Australia PTY Limited</Name>
+					<Address>
+						<CountryCode>AU</CountryCode>
+						<AddressFix>
+							<PostCode>NSW 2001</PostCode>
+							<City>Sydney</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC512</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023VG-c05e9ae6-f0c1-4ec0-825a-7a18be43b05a</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>VG</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">0</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>VG</ResCountryCode>
+					<TIN>NOTIN</TIN>
+					<Name>Reston Securities Limited </Name>
+					<Address>
+						<CountryCode>VG</CountryCode>
+						<AddressFix>
+							<PostCode>Tortola</PostCode>
+							<City>Tortola</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC512</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023BD-fc7fede3-898c-4881-9fa0-4c32c0b2761c</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>BD</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-245736</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>1</NbEmployees>
+				<Assets currCode="GBP">161831</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>BD</ResCountryCode>
+					<TIN>633594782619</TIN>
+					<Name>Ashok Leyland Limited - Dhaka representative office</Name>
+					<Address>
+						<CountryCode>BD</CountryCode>
+						<AddressFix>
+							<PostCode>1212</PostCode>
+							<City>Dhaka</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC513</BizActivities>
+				<OtherEntityInfo>Liaison office
+</OtherEntityInfo>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023DE-9fca29d1-7e77-4999-a7d9-14baad3dac48</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>DE</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">40158517</Unrelated>
+					<Related currCode="GBP">4072572</Related>
+					<Total currCode="GBP">44231089</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">895199</ProfitOrLoss>
+				<TaxPaid currCode="GBP">49509</TaxPaid>
+				<TaxAccrued currCode="GBP">49509</TaxAccrued>
+				<Capital currCode="GBP">45843852</Capital>
+				<Earnings currCode="GBP">-41664345</Earnings>
+				<NbEmployees>122</NbEmployees>
+				<Assets currCode="GBP">728995</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>DE</ResCountryCode>
+					<TIN>315/5720/0911</TIN>
+					<Name>Albonair GmbH</Name>
+					<Address>
+						<CountryCode>DE</CountryCode>
+						<AddressFix>
+							<PostCode>44263</PostCode>
+							<City>Dortmund</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<BizActivities>CBC501</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>DE</ResCountryCode>
+					<TIN>214/5803/3403</TIN>
+					<Name>Hinduja Tech GmbH</Name>
+					<Address>
+						<CountryCode>DE</CountryCode>
+						<AddressFix>
+							<PostCode>80333</PostCode>
+							<City>Munich</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023RU-3a379cf5-0e82-426b-a188-e56031efeef1</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>RU</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">64585</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">64585</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">193730</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">1302122</Capital>
+				<Earnings currCode="GBP">-1537463</Earnings>
+				<NbEmployees>2</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>RU</ResCountryCode>
+					<TIN>7725321741</TIN>
+					<Name>Ashok Leyland Limited Liability Company</Name>
+					<Address>
+						<CountryCode>RU</CountryCode>
+						<AddressFix>
+							<PostCode>108814</PostCode>
+							<City>Moscow</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023MU-c4299122-37a1-447a-b342-75eab09f0b0b</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>MU</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">34544</Unrelated>
+					<Related currCode="GBP">1721397</Related>
+					<Total currCode="GBP">1755941</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-13260762</ProfitOrLoss>
+				<TaxPaid currCode="GBP">142284</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">22421583</Capital>
+				<Earnings currCode="GBP">-22867983</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MU</ResCountryCode>
+					<TIN>27503304</TIN>
+					<Name>Hinduja Renewables Holdings  Limited</Name>
+					<Address>
+						<CountryCode>MU</CountryCode>
+						<AddressFix>
+							<PostCode>72201</PostCode>
+							<City>Ebene</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MU</ResCountryCode>
+					<TIN>25045619</TIN>
+					<Name>Hinduja Energy Limited </Name>
+					<Address>
+						<CountryCode>MU</CountryCode>
+						<AddressFix>
+							<PostCode>72201</PostCode>
+							<City>Ebene</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MU</ResCountryCode>
+					<TIN>25120734</TIN>
+					<Name>Hinduja Capital Limited</Name>
+					<Address>
+						<CountryCode>MU</CountryCode>
+						<AddressFix>
+							<PostCode>72201</PostCode>
+							<City>Ebene</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MU</ResCountryCode>
+					<TIN>27538706</TIN>
+					<Name>Hinduja Foundries Holding Limited </Name>
+					<Address>
+						<CountryCode>MU</CountryCode>
+						<AddressFix>
+							<PostCode>72201</PostCode>
+							<City>Ebene</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>MU</ResCountryCode>
+					<TIN>27503265</TIN>
+					<Name>Hinduja Finance Limited</Name>
+					<Address>
+						<CountryCode>MU</CountryCode>
+						<AddressFix>
+							<PostCode>72201</PostCode>
+							<City>Ebene</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023GB-2f9b93fa-9257-4c18-b7b4-4a89aed0b19c</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>GB</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">30602980</Unrelated>
+					<Related currCode="GBP">4315902</Related>
+					<Total currCode="GBP">34918882</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-40704975</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">751308</TaxAccrued>
+				<Capital currCode="GBP">255138501</Capital>
+				<Earnings currCode="GBP">56859238</Earnings>
+				<NbEmployees>409</NbEmployees>
+				<Assets currCode="GBP">15067489</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>986496249</TIN>
+					<Name>Drive System Design Limited, UK</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>CV31 1NB</PostCode>
+							<City>Royal Leamington Spa</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>3378017617</TIN>
+					<Name>Switch Mobility Ltd ( formerly Optare Group Limited )</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>LS25 6PT</PostCode>
+							<City>Leeds</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>3416029463</TIN>
+					<Name>Optare UK Limited</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>LS25 6PT</PostCode>
+							<City>Leeds</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>7853101145</TIN>
+					<Name>Optare plc</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>LS25 6PT</PostCode>
+							<City>Leeds</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>46005 17015</TIN>
+					<Name>HGHL Holdings Limited</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>SWIY4QU</PostCode>
+							<City>London</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC513</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>5213820928</TIN>
+					<Name>OHM International Mobility Limited</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>LS25 6PT</PostCode>
+							<City>Leeds</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>442083712</TIN>
+					<Name>Hinduja Tech UK Limited</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>SW1Y 4QU</PostCode>
+							<City>London</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>4892124639</TIN>
+					<Name>Hinduja Tech Limited – UK branch PE</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>SW1Y 4QU</PostCode>
+							<City>London</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC507</BizActivities>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>GB</ResCountryCode>
+					<TIN>2448025176</TIN>
+					<Name>Hinduja Automotive Limited</Name>
+					<Address>
+						<CountryCode>GB</CountryCode>
+						<AddressFix>
+							<PostCode>SW1Y 4QU</PostCode>
+							<City>London</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023RO-30c153ab-90c1-47ea-9eb5-95fcc27df3df</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>RO</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">0</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>RO</ResCountryCode>
+					<TIN>43304496</TIN>
+					<Name>Hinduja Tech Limited – Romania Branch PE</Name>
+					<Address>
+						<CountryCode>RO</CountryCode>
+						<AddressFix>
+							<PostCode>64860</PostCode>
+							<City>Monterrey</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC512</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023KE-38718fb4-6451-4691-9758-fee8e2f468ea</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>KE</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">2372062</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">2372062</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-629624</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>1</NbEmployees>
+				<Assets currCode="GBP">32808</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>KE</ResCountryCode>
+					<TIN>P051351276Y</TIN>
+					<Name>Ashok Leyland Limited - Kenya branch PE</Name>
+					<Address>
+						<CountryCode>KE</CountryCode>
+						<AddressFix>
+							<PostCode> 38241-00623</PostCode>
+							<City>Nairobi</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023IN-e931a0a0-26c8-42c9-adcd-3d00604fd469</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>IN</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">4527085053</Unrelated>
+					<Related currCode="GBP">278156157</Related>
+					<Total currCode="GBP">4805241210</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">361786948</ProfitOrLoss>
+				<TaxPaid currCode="GBP">143413614</TaxPaid>
+				<TaxAccrued currCode="GBP">111710532</TaxAccrued>
+				<Capital currCode="GBP">527347679</Capital>
+				<Earnings currCode="GBP">934266209</Earnings>
+				<NbEmployees>22652</NbEmployees>
+				<Assets currCode="GBP">1331354944</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCH1662G</TIN>
+					<Name>Hinduja Energy (India) Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400018</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AAJCG5291P</TIN>
+					<Name>GAADI MANDI DIGITAL PLATFORMS LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC513</BizActivities>
+				<OtherEntityInfo>Primarily engaged into business of sale of vehicles and providing web-based logistics and allied services
+</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AALCA7384B1ZK RAJASTHAN - 08AALCA7</TIN>
+					<Name>Hinduja Renewables Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAKCP3080G1ZB TAMILNADU-33AAKCP308</TIN>
+					<Name>Prathama Solarconnect Energy Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AADCD2152N</TIN>
+					<Name>Hinduja Tech Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>Chennai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCG1194Q</TIN>
+					<Name>Gulf Ashley Motor Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>Chennai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AABCF8782C1ZJ RAJASTHAN - 08AABCF8</TIN>
+					<Name>Raajhans Solar Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAGCM6467Q1ZK RAJASTHAN - 08AAGCM6</TIN>
+					<Name>Kiran Solar One Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAGCH2827K1ZD GUJARAT- 24AAGCH2827</TIN>
+					<Name>HR Sabarmati Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>08AAHCV7400R1ZP</TIN>
+					<Name>VISHWA BUSES AND COACHES LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>301030</PostCode>
+							<City>ALWAR</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAFCH3058P1Z3</TIN>
+					<Name>Hinduja Rooftop Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAOCS4380A1ZB GUJARAT - 24AAOCS438</TIN>
+					<Name>Solarfield Energy Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCH1807P</TIN>
+					<Name>Hinduja Leyland Finance Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC509</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AADCO4108K</TIN>
+					<Name>OHM GLOBAL MOBILITY PRIVATE LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>Chennai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC512</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>ABFCS1827E</TIN>
+					<Name>Switch Mobility Automotive Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AADCH6010R</TIN>
+					<Name>Hinduja Housing Finance Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC509</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAGCH0756B1ZW</TIN>
+					<Name>HR Vaigai Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AAACA4651L</TIN>
+					<Name>Ashok Leyland Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>Chennai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAFCH4421G1ZT</TIN>
+					<Name>Hinduja Renewables One Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCI4429C</TIN>
+					<Name>IDL Explosives Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>500072</PostCode>
+							<City>Hyderabad</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAPCS9134B1Z6 RAJASTHAN - 08AAPCS9</TIN>
+					<Name>Solarfield Energy Two Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AABCH2426D</TIN>
+					<Name>Hinduja National Power Corporation Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400 018</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AAICG9782C</TIN>
+					<Name>GRO DIGITAL PLATFORMS LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAHCM6685M1ZN RAJASTHAN - 08AAHCM6</TIN>
+					<Name>Kiran Suryaprakash India Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AABCT0094R</TIN>
+					<Name>GLOBAL TVS BUS BODY BUILDERS LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>621316</PostCode>
+							<City>VIRALIMALAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AABCF8781B2ZL RAJASTHAN - 08AABCF8</TIN>
+					<Name>Hinduja Renewables Energy Pvt. Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AAICA0489L</TIN>
+					<Name>Albonair India Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>Chennai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAFCH4597M1ZV KARNATAKA- 29AAFCH459</TIN>
+					<Name>Hinduja Renewables Two Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCH4777Q</TIN>
+					<Name>HLF Services Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AABCG8433B</TIN>
+					<Name>GOCL Corporation Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>500072</PostCode>
+							<City>Hyderabad</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAFCH5130C1Z1 KARNATAKA- 29AAFCH51</TIN>
+					<Name>HR Kaveri Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AACCH0229B</TIN>
+					<Name>ASHLEY AVIATION LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC513</BizActivities>
+				<OtherEntityInfo>Air Charter Service</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>MAHARASHTRA- 27AAECK5844K1Z5 GUJARAT -24AAECK5844K</TIN>
+					<Name>Kiran Renewables Private Limited</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>400093</PostCode>
+							<City>Mumbai</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>IN</ResCountryCode>
+					<TIN>AAECH9063R</TIN>
+					<Name>HINDUJA INSURANCE BROKING AND ADVISORY SERVICES LIMITED</Name>
+					<Address>
+						<CountryCode>IN</CountryCode>
+						<AddressFix>
+							<PostCode>600032</PostCode>
+							<City>CHENNAI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC510</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023AE-4b61d1cc-6f54-46e7-9223-92cfee23dfea</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>AE</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">153744422</Unrelated>
+					<Related currCode="GBP">588722</Related>
+					<Total currCode="GBP">154333144</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">2338042</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">16306746</Capital>
+				<Earnings currCode="GBP">-9522180</Earnings>
+				<NbEmployees>592</NbEmployees>
+				<Assets currCode="GBP">11394771</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>AE</ResCountryCode>
+					<TIN>00861</TIN>
+					<Name>Ashok Leyland Limited - Jebel Ali branch PE</Name>
+					<Address>
+						<CountryCode>AE</CountryCode>
+						<AddressFix>
+							<PostCode>JEBEL ALI</PostCode>
+							<City>JEBEL ALI</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>AE</ResCountryCode>
+					<TIN>100036153300003</TIN>
+					<Name>ASHOK LEYLAND (U.A.E.)L.L.C.</Name>
+					<Address>
+						<CountryCode>AE</CountryCode>
+						<AddressFix>
+							<PostCode>RAS AL KHAIMAH</PostCode>
+							<City>RAS AL KHAIMAH</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC504</BizActivities>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023UA-82095341-b2c5-48ec-838a-98b1275ad1bd</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>UA</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">0</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">0</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>UA</ResCountryCode>
+					<TIN>NOTIN</TIN>
+					<Name>Ashok Leyland Limited - Ukraine branch PE</Name>
+					<Address>
+						<CountryCode>UA</CountryCode>
+						<AddressFix>
+							<PostCode>/</PostCode>
+							<City>/</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023CI-48b01c4a-f82a-4aed-9a9c-55f592421da4</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>CI</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">21971</Unrelated>
+					<Related currCode="GBP">279493</Related>
+					<Total currCode="GBP">301464</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-132636</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">3921</TaxAccrued>
+				<Capital currCode="GBP">1932321</Capital>
+				<Earnings currCode="GBP">-3193844</Earnings>
+				<NbEmployees>6</NbEmployees>
+				<Assets currCode="GBP">37030</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CI</ResCountryCode>
+					<TIN>1627639F</TIN>
+					<Name>Ashok Leyland West Africa SA</Name>
+					<Address>
+						<CountryCode>CI</CountryCode>
+						<AddressFix>
+							<PostCode>15</PostCode>
+							<City>Abidjan</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CI</ResCountryCode>
+					<TIN>2133263  Y</TIN>
+					<Name>Ashok Leyland Limited - Ivory Coast branch PE</Name>
+					<Address>
+						<CountryCode>CI</CountryCode>
+						<AddressFix>
+							<PostCode>15</PostCode>
+							<City>Abidjan</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023FR-558d1b39-9cf5-4b1f-ab4d-ed1f1657d907</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>FR</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">743918</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">743918</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-26038</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">0</Capital>
+				<Earnings currCode="GBP">-1276643</Earnings>
+				<NbEmployees>5</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>FR</ResCountryCode>
+					<TIN>80414317000020</TIN>
+					<Name>Hinduja Tech Limited - France Branch PE</Name>
+					<Address>
+						<CountryCode>FR</CountryCode>
+						<AddressFix>
+							<PostCode>92800</PostCode>
+							<City>Puteaux</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023US-937595d4-069f-4836-b709-29ba2a5d0b47</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>US</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">14920704</Unrelated>
+					<Related currCode="GBP">125741</Related>
+					<Total currCode="GBP">15046445</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">647465</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">197109</TaxAccrued>
+				<Capital currCode="GBP">574271</Capital>
+				<Earnings currCode="GBP">3264285</Earnings>
+				<NbEmployees>113</NbEmployees>
+				<Assets currCode="GBP">1317580</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>US</ResCountryCode>
+					<TIN>800774240</TIN>
+					<Name>Hinduja Tech INC</Name>
+					<Address>
+						<CountryCode>US</CountryCode>
+						<AddressFix>
+							<PostCode>48375</PostCode>
+							<City>Novi</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>US</ResCountryCode>
+					<TIN>800778897</TIN>
+					<Name>Drive System Design Inc, USA</Name>
+					<Address>
+						<CountryCode>US</CountryCode>
+						<AddressFix>
+							<PostCode>48335</PostCode>
+							<City>Michigan</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC506</BizActivities>
+				<BizActivities>CBC507</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023LU-7cefe25d-6e0d-4992-93df-325a18bf8ad2</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>LU</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-11982967</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">26677300</Capital>
+				<Earnings currCode="GBP">-43045444</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>LU</ResCountryCode>
+					<TIN>20102240066</TIN>
+					<Name>Machen Holding S.A.</Name>
+					<Address>
+						<CountryCode>LU</CountryCode>
+						<AddressFix>
+							<PostCode>1471</PostCode>
+							<City>Luxembourg</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC511</BizActivities>
+				<BizActivities>CBC508</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023CL-703842cf-c1ed-4607-a7e4-75cf3be50976</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>CL</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-861</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">0</TaxAccrued>
+				<Capital currCode="GBP">347499</Capital>
+				<Earnings currCode="GBP">-321213</Earnings>
+				<NbEmployees>0</NbEmployees>
+				<Assets currCode="GBP">0</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>CL</ResCountryCode>
+					<TIN>NOTIN</TIN>
+					<Name>ASHOK LEYLAND (CHILE) S.A.</Name>
+					<Address>
+						<CountryCode>CL</CountryCode>
+						<AddressFix>
+							<PostCode>76.178.636-9</PostCode>
+							<City>IQUIQUE</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+			</ConstEntities>
+		</CbcReports>
+		<CbcReports>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023ES-e311302a-f2f6-4b0a-9ea1-451168acec91</ns2:DocRefId>
+			</DocSpec>
+			<ResCountryCode>ES</ResCountryCode>
+			<Summary>
+				<Revenues>
+					<Unrelated currCode="GBP">0</Unrelated>
+					<Related currCode="GBP">0</Related>
+					<Total currCode="GBP">0</Total>
+				</Revenues>
+				<ProfitOrLoss currCode="GBP">-737232</ProfitOrLoss>
+				<TaxPaid currCode="GBP">0</TaxPaid>
+				<TaxAccrued currCode="GBP">318039</TaxAccrued>
+				<Capital currCode="GBP">5092047</Capital>
+				<Earnings currCode="GBP">-1645914</Earnings>
+				<NbEmployees>3</NbEmployees>
+				<Assets currCode="GBP">4862305</Assets>
+			</Summary>
+			<ConstEntities>
+				<ConstEntity>
+					<ResCountryCode>ES</ResCountryCode>
+					<TIN>ESB05467519</TIN>
+					<Name>Switch Mobility Europe S.I, Spain</Name>
+					<Address>
+						<CountryCode>ES</CountryCode>
+						<AddressFix>
+							<PostCode>47001</PostCode>
+							<City>Valladolid</City>
+						</AddressFix>
+					</Address>
+				</ConstEntity>
+				<BizActivities>CBC505</BizActivities>
+				<OtherEntityInfo>/</OtherEntityInfo>
+			</ConstEntities>
+		</CbcReports>
+		<AdditionalInfo>
+			<DocSpec>
+				<ns2:DocTypeIndic>OECD1</ns2:DocTypeIndic>
+				<ns2:DocRefId>LU2023info-c8a8446c-6d9c-4785-9ee7-d1dda14a22ad</ns2:DocRefId>
+			</DocSpec>
+			<OtherInfo>1.	Accumulated Earnings for Jurisdiction India contains negative figures for :
+Albonair India Private Limited, Ashley Aviation Limited, Gulf Ashley Motor Limited, Hinduja Energy (India) Limited, Hinduja Insurance Brokering and Advisory Services Limited, Hinduja National Power Corporation Limited, Hinduja Renewables Energy Group, and Hinduja Tech Limited. 
+ 2.	Accumulated Earnings for Jurisdiction Mauritius  contains positive figures for: 
+Hinduja Capital Limited
+ 3.	Accumulated Earnings for Jurisdiction United Kingdom contains negative figures for :
+Optare plc, Optare UK Limited, Switch Mobility Ltd ( formerly Optare Group Limited ), and Hinduja Tech Limited - UK Branch PE.
+</OtherInfo>
+		</AdditionalInfo>
+	</CbcBody>
+</CBC_OECD></Object></Signature>
