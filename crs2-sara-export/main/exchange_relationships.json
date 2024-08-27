@@ -1,0 +1,3582 @@
+{
+  "CRS_VU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "VU",
+    "srcName" : "Vanuatu",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_KY_CL" : {
+    "type" : "CBC",
+    "srcIso" : "KY",
+    "srcName" : "Cayman Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_JM" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "JM",
+    "dstName" : "Jamaica",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CRS_BB_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BB",
+    "srcName" : "Barbados",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_GD_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GD",
+    "srcName" : "Grenada",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_RO_CL" : {
+    "type" : "CRS",
+    "srcIso" : "RO",
+    "srcName" : "Romania",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_DE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "DE",
+    "srcName" : "Germany",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_PL_CL" : {
+    "type" : "CRS",
+    "srcIso" : "PL",
+    "srcName" : "Poland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_JE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "JE",
+    "dstName" : "Jersey",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AU_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AU",
+    "srcName" : "Australia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_UY_CL" : {
+    "type" : "CRS",
+    "srcIso" : "UY",
+    "srcName" : "Uruguay",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_FO" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FO",
+    "dstName" : "Faroe Islands",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_HK_CL" : {
+    "type" : "CRS",
+    "srcIso" : "HK",
+    "srcName" : "Hong Kong SAR China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019 (DTY)]"
+  },
+  "CBC_CL_FR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FR",
+    "dstName" : "France",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_LU_CL" : {
+    "type" : "CBC",
+    "srcIso" : "LU",
+    "srcName" : "Luxembourg",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_GG" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GG",
+    "dstName" : "Guernsey",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_GI" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GI",
+    "dstName" : "Gibraltar",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_IT" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IT",
+    "dstName" : "Italy",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_IS" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IS",
+    "dstName" : "Iceland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_ZA" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ZA",
+    "dstName" : "South Africa",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_TR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "TR",
+    "srcName" : "Turkey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_CL_GB" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GB",
+    "dstName" : "United Kingdom",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_IN" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IN",
+    "dstName" : "India",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AE",
+    "srcName" : "United Arab Emirates",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_CL_KN" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KN",
+    "dstName" : "St. Kitts & Nevis",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LV_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LV",
+    "srcName" : "Latvia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_ES" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ES",
+    "dstName" : "Spain",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CN_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CN",
+    "srcName" : "China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_KE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KE",
+    "dstName" : "Kenya",
+    "year" : 2022,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2021 (DTY)]"
+  },
+  "CBC_PK_CL" : {
+    "type" : "CBC",
+    "srcIso" : "PK",
+    "srcName" : "Pakistan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CY_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CY",
+    "srcName" : "Cyprus",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BM",
+    "srcName" : "Bermuda",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_FI" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FI",
+    "dstName" : "Finland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_IL_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IL",
+    "srcName" : "Israel",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SE",
+    "srcName" : "Sweden",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_JP" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "JP",
+    "dstName" : "Japan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MV_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MV",
+    "srcName" : "Maldives",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CRS_KE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KE",
+    "srcName" : "Kenya",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2022,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2021 (DTY)]"
+  },
+  "CRS_AL_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AL",
+    "srcName" : "Albania",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_HU" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HU",
+    "dstName" : "Hungary",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CO_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CO",
+    "srcName" : "Colombia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SE",
+    "srcName" : "Sweden",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_LI" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LI",
+    "dstName" : "Liechtenstein",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BS_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BS",
+    "srcName" : "Bahamas",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated -  Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_BH_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BH",
+    "srcName" : "Bahrain",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_MS_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MS",
+    "srcName" : "Montserrat",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_HU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "HU",
+    "srcName" : "Hungary",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_DK_CL" : {
+    "type" : "CRS",
+    "srcIso" : "DK",
+    "srcName" : "Denmark",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_IE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IE",
+    "srcName" : "Ireland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_LC" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LC",
+    "dstName" : "St. Lucia",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_FR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "FR",
+    "srcName" : "France",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_HR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HR",
+    "dstName" : "Croatia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_GB_CL" : {
+    "type" : "CBC",
+    "srcIso" : "GB",
+    "srcName" : "United Kingdom",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_AW_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AW",
+    "srcName" : "Aruba",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MC",
+    "srcName" : "Monaco",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CZ_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CZ",
+    "srcName" : "Czechia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_KZ" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KZ",
+    "dstName" : "Kazakhstan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_TH_CL" : {
+    "type" : "CRS",
+    "srcIso" : "TH",
+    "srcName" : "Thailand",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CBC_QA_CL" : {
+    "type" : "CBC",
+    "srcIso" : "QA",
+    "srcName" : "Qatar",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CRS_AE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AE",
+    "srcName" : "United Arab Emirates",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated  - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_CL_IL" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IL",
+    "dstName" : "Israel",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NO_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NO",
+    "srcName" : "Norway",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_IM" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IM",
+    "dstName" : "Isle of Man",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_KR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KR",
+    "dstName" : "South Korea",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_ID" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ID",
+    "dstName" : "Indonesia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_IE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IE",
+    "dstName" : "Ireland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_BR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BR",
+    "srcName" : "Brazil",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_GR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "GR",
+    "srcName" : "Greece",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_KZ_CL" : {
+    "type" : "CBC",
+    "srcIso" : "KZ",
+    "srcName" : "Kazakhstan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_PE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "PE",
+    "srcName" : "Peru",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_AG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AG",
+    "srcName" : "Antigua & Barbuda",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CBC_EE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "EE",
+    "srcName" : "Estonia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_PA_CL" : {
+    "type" : "CRS",
+    "srcIso" : "PA",
+    "srcName" : "Panama",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CL_MC" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MC",
+    "dstName" : "Monaco",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CL_GR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GR",
+    "dstName" : "Greece",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CH_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CH",
+    "srcName" : "Switzerland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_BG_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BG",
+    "srcName" : "Bulgaria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MX_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MX",
+    "srcName" : "Mexico",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_TC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "TC",
+    "srcName" : "Turks & Caicos Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_CL_HK" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HK",
+    "dstName" : "Hong Kong SAR China",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_MH_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MH",
+    "srcName" : "Marshall Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_AR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AR",
+    "srcName" : "Argentina",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_LV" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LV",
+    "dstName" : "Latvia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_LU" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LU",
+    "dstName" : "Luxembourg",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_LT" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LT",
+    "dstName" : "Lithuania",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SK_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SK",
+    "srcName" : "Slovakia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_GI_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GI",
+    "srcName" : "Gibraltar",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_FI" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FI",
+    "dstName" : "Finland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated -Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_HK_CL" : {
+    "type" : "CBC",
+    "srcIso" : "HK",
+    "srcName" : "Hong Kong SAR China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_UY_CL" : {
+    "type" : "CBC",
+    "srcIso" : "UY",
+    "srcName" : "Uruguay",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SG",
+    "srcName" : "Singapore",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_JP" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "JP",
+    "dstName" : "Japan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_NL_CL" : {
+    "type" : "CBC",
+    "srcIso" : "NL",
+    "srcName" : "Netherlands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LB_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LB",
+    "srcName" : "Lebanon",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_MY_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MY",
+    "srcName" : "Malaysia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_EE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "EE",
+    "srcName" : "Estonia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_TR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "TR",
+    "srcName" : "Turkey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_CL_ES" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ES",
+    "dstName" : "Spain",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_LI_CL" : {
+    "type" : "CBC",
+    "srcIso" : "LI",
+    "srcName" : "Liechtenstein",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_GH_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GH",
+    "srcName" : "Ghana",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_KR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "KR",
+    "srcName" : "South Korea",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_BB_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BB",
+    "srcName" : "Barbados",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MU_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MU",
+    "srcName" : "Mauritius",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_KE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KE",
+    "dstName" : "Kenya",
+    "year" : 2021,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2021]"
+  },
+  "CRS_AU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AU",
+    "srcName" : "Australia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_DE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "DE",
+    "srcName" : "Germany",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GI" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GI",
+    "dstName" : "Gibraltar",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_GH" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GH",
+    "dstName" : "Ghana",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GG" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GG",
+    "dstName" : "Guernsey",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_VC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "VC",
+    "srcName" : "St. Vincent & Grenadines",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GD" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GD",
+    "dstName" : "Grenada",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_CL_IN" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IN",
+    "dstName" : "India",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GB" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GB",
+    "dstName" : "United Kingdom",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_CL_ZA" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ZA",
+    "dstName" : "South Africa",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_PT_CL" : {
+    "type" : "CBC",
+    "srcIso" : "PT",
+    "srcName" : "Portugal",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_RU_CL" : {
+    "type" : "CBC",
+    "srcIso" : "RU",
+    "srcName" : "Russia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CN_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CN",
+    "srcName" : "China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_IS" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IS",
+    "dstName" : "Iceland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_IT" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IT",
+    "dstName" : "Italy",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_NG_CL" : {
+    "type" : "CBC",
+    "srcIso" : "NG",
+    "srcName" : "Nigeria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_IL_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IL",
+    "srcName" : "Israel",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_FR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FR",
+    "dstName" : "France",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_BM_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BM",
+    "srcName" : "Bermuda",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CY_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CY",
+    "srcName" : "Cyprus",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SA_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SA",
+    "srcName" : "Saudi Arabia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_FO" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "FO",
+    "dstName" : "Faroe Islands",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_JE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "JE",
+    "dstName" : "Jersey",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_GB_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GB",
+    "srcName" : "United Kingdom",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_HK" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HK",
+    "dstName" : "Hong Kong SAR China",
+    "year" : 2020,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019 (DTY)]"
+  },
+  "CRS_IE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IE",
+    "srcName" : "Ireland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NZ_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NZ",
+    "srcName" : "New Zealand",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_BS_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BS",
+    "srcName" : "Bahamas",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_JP_CL" : {
+    "type" : "CRS",
+    "srcIso" : "JP",
+    "srcName" : "Japan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SA_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SA",
+    "srcName" : "Saudi Arabia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MO_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MO",
+    "srcName" : "Macao SAR China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_AW_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AW",
+    "srcName" : "Aruba",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_LT" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LT",
+    "dstName" : "Lithuania",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CO_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CO",
+    "srcName" : "Colombia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_LU" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LU",
+    "dstName" : "Luxembourg",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_LV" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LV",
+    "dstName" : "Latvia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_TH_CL" : {
+    "type" : "CBC",
+    "srcIso" : "TH",
+    "srcName" : "Thailand",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CBC_DK_CL" : {
+    "type" : "CBC",
+    "srcIso" : "DK",
+    "srcName" : "Denmark",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_HU_CL" : {
+    "type" : "CBC",
+    "srcIso" : "HU",
+    "srcName" : "Hungary",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_FR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "FR",
+    "srcName" : "France",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CH_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CH",
+    "srcName" : "Switzerland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_GR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GR",
+    "srcName" : "Greece",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GR",
+    "dstName" : "Greece",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MC" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MC",
+    "dstName" : "Monaco",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CZ_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CZ",
+    "srcName" : "Czechia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_RU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "RU",
+    "srcName" : "Russia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_GL" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "GL",
+    "dstName" : "Greenland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_BH_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BH",
+    "srcName" : "Bahrain",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_CL_IM" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IM",
+    "dstName" : "Isle of Man",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_IL" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IL",
+    "dstName" : "Israel",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_KZ" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KZ",
+    "dstName" : "Kazakhstan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BG",
+    "srcName" : "Bulgaria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_IE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "IE",
+    "dstName" : "Ireland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_ID" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "ID",
+    "dstName" : "Indonesia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MT_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MT",
+    "srcName" : "Malta",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_KR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "KR",
+    "dstName" : "South Korea",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_TC_CL" : {
+    "type" : "CBC",
+    "srcIso" : "TC",
+    "srcName" : "Turks & Caicos Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BR",
+    "srcName" : "Brazil",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_LT_CL" : {
+    "type" : "CBC",
+    "srcIso" : "LT",
+    "srcName" : "Lithuania",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LC",
+    "srcName" : "St. Lucia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CL_LI" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "LI",
+    "dstName" : "Liechtenstein",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AR",
+    "srcName" : "Argentina",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_GI_CL" : {
+    "type" : "CBC",
+    "srcIso" : "GI",
+    "srcName" : "Gibraltar",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_KW_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KW",
+    "srcName" : "Kuwait",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - in force from 01 December 2018 and effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_SK_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SK",
+    "srcName" : "Slovakia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_HU" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HU",
+    "dstName" : "Hungary",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_HR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "HR",
+    "dstName" : "Croatia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_OM_CL" : {
+    "type" : "CBC",
+    "srcIso" : "OM",
+    "srcName" : "Oman",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2021,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2021]"
+  },
+  "CBC_SG_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SG",
+    "srcName" : "Singapore",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_BE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BE",
+    "dstName" : "Belgium",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_RU" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "RU",
+    "dstName" : "Russia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SC",
+    "srcName" : "Seychelles",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_BB" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BB",
+    "dstName" : "Barbados",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_DM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "DM",
+    "srcName" : "Dominica",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CBC_TN_CL" : {
+    "type" : "CBC",
+    "srcIso" : "TN",
+    "srcName" : "Tunisia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AZ" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AZ",
+    "dstName" : "Azerbaijan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AW" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AW",
+    "dstName" : "Aruba",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_NZ" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NZ",
+    "dstName" : "New Zealand",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AU" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AU",
+    "dstName" : "Australia",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_PT_CL" : {
+    "type" : "CRS",
+    "srcIso" : "PT",
+    "srcName" : "Portugal",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AT" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AT",
+    "dstName" : "Austria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AR",
+    "dstName" : "Argentina",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_KR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KR",
+    "srcName" : "South Korea",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MU",
+    "srcName" : "Mauritius",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_ES_CL" : {
+    "type" : "CBC",
+    "srcIso" : "ES",
+    "srcName" : "Spain",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_AL" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AL",
+    "dstName" : "Albania",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MY_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MY",
+    "srcName" : "Malaysia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CL_AG" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AG",
+    "dstName" : "Antigua & Barbuda",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CRS_GL_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GL",
+    "srcName" : "Greenland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_ZA_CL" : {
+    "type" : "CBC",
+    "srcIso" : "ZA",
+    "srcName" : "South Africa",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_ID_CL" : {
+    "type" : "CRS",
+    "srcIso" : "ID",
+    "srcName" : "Indonesia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_AI_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AI",
+    "srcName" : "Anguilla",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CA" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CA",
+    "dstName" : "Canada",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BE",
+    "srcName" : "Belgium",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_SM" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SM",
+    "dstName" : "San Marino",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MT" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MT",
+    "dstName" : "Malta",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MU" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MU",
+    "dstName" : "Mauritius",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_SK" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SK",
+    "dstName" : "Slovakia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LI_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LI",
+    "srcName" : "Liechtenstein",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MV" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MV",
+    "dstName" : "Maldives",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CBC_LR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "LR",
+    "srcName" : "Liberia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2022,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2022]"
+  },
+  "CRS_CL_SI" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SI",
+    "dstName" : "Slovenia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MX" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MX",
+    "dstName" : "Mexico",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_MY" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MY",
+    "dstName" : "Malaysia",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CL_SG" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SG",
+    "dstName" : "Singapore",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_FO_CL" : {
+    "type" : "CBC",
+    "srcIso" : "FO",
+    "srcName" : "Faroe Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_NL" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NL",
+    "dstName" : "Netherlands",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_SE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SE",
+    "dstName" : "Sweden",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_BR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BR",
+    "dstName" : "Brazil",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_SC" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SC",
+    "dstName" : "Seychelles",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_NO" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NO",
+    "dstName" : "Norway",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CA_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CA",
+    "srcName" : "Canada",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_IT_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IT",
+    "srcName" : "Italy",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_SA" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SA",
+    "dstName" : "Saudi Arabia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_GG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "GG",
+    "srcName" : "Guernsey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SM_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SM",
+    "srcName" : "San Marino",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_JE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "JE",
+    "srcName" : "Jersey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_AT_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AT",
+    "srcName" : "Austria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_NG" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NG",
+    "dstName" : "Nigeria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_BG" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BG",
+    "dstName" : "Bulgaria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_IT_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IT",
+    "srcName" : "Italy",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_DE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "DE",
+    "dstName" : "Germany",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NG",
+    "srcName" : "Nigeria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_TR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "TR",
+    "dstName" : "Turkey",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_JP_CL" : {
+    "type" : "CBC",
+    "srcIso" : "JP",
+    "srcName" : "Japan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_NZ_CL" : {
+    "type" : "CBC",
+    "srcIso" : "NZ",
+    "srcName" : "New Zealand",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_JE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "JE",
+    "srcName" : "Jersey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CZ" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CZ",
+    "dstName" : "Czechia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CY" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CY",
+    "dstName" : "Cyprus",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_VG_CL" : {
+    "type" : "CBC",
+    "srcIso" : "VG",
+    "srcName" : "British Virgin Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CW" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CW",
+    "dstName" : "Curaçao",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_TH" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "TH",
+    "dstName" : "Thailand",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CBC_IM_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IM",
+    "srcName" : "Isle of Man",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CR" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CR",
+    "dstName" : "Costa Rica",
+    "year" : 2017,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2016 (DTY)]"
+  },
+  "CBC_BZ_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BZ",
+    "srcName" : "Belize",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_AD" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AD",
+    "dstName" : "Andorra",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CO" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CO",
+    "dstName" : "Colombia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CN" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CN",
+    "dstName" : "China",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_CK" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CK",
+    "dstName" : "Cook Islands",
+    "year" : 2019,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018 (DTY)]"
+  },
+  "CBC_MO_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MO",
+    "srcName" : "Macao SAR China",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_CL_CH" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CH",
+    "dstName" : "Switzerland",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CR",
+    "srcName" : "Costa Rica",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2016 (DTY)]"
+  },
+  "CRS_CL_UY" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "UY",
+    "dstName" : "Uruguay",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_EE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "EE",
+    "dstName" : "Estonia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LT_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LT",
+    "srcName" : "Lithuania",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_PA" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PA",
+    "dstName" : "Panama",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CL_EC" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "EC",
+    "dstName" : "Ecuador",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated -  Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CRS_OM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "OM",
+    "srcName" : "Oman",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2021,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2021]"
+  },
+  "CRS_HR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "HR",
+    "srcName" : "Croatia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NL_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NL",
+    "srcName" : "Netherlands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_PT" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PT",
+    "dstName" : "Portugal",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_PE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PE",
+    "dstName" : "Peru",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_FI_CL" : {
+    "type" : "CBC",
+    "srcIso" : "FI",
+    "srcName" : "Finland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SC_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SC",
+    "srcName" : "Seychelles",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_IN_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IN",
+    "srcName" : "India",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_DK" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "DK",
+    "dstName" : "Denmark",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_AZ_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AZ",
+    "srcName" : "Azerbaijan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CW_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CW",
+    "srcName" : "Curaçao",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_PK" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PK",
+    "dstName" : "Pakistan",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CL_PL" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PL",
+    "dstName" : "Poland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MT_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MT",
+    "srcName" : "Malta",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SA" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SA",
+    "dstName" : "Saudi Arabia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_NO" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NO",
+    "dstName" : "Norway",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_BR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BR",
+    "dstName" : "Brazil",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SC" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SC",
+    "dstName" : "Seychelles",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SE",
+    "dstName" : "Sweden",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_NL" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NL",
+    "dstName" : "Netherlands",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_LU_CL" : {
+    "type" : "CRS",
+    "srcIso" : "LU",
+    "srcName" : "Luxembourg",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SG" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SG",
+    "dstName" : "Singapore",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_BG" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BG",
+    "dstName" : "Bulgaria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_KY_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KY",
+    "srcName" : "Cayman Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_NG" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NG",
+    "dstName" : "Nigeria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CA_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CA",
+    "srcName" : "Canada",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_RO_CL" : {
+    "type" : "CBC",
+    "srcIso" : "RO",
+    "srcName" : "Romania",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_PL_CL" : {
+    "type" : "CBC",
+    "srcIso" : "PL",
+    "srcName" : "Poland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BN_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BN",
+    "srcName" : "Brunei",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CBC_CL_CA" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CA",
+    "dstName" : "Canada",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_IS_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IS",
+    "srcName" : "Iceland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_MY" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MY",
+    "dstName" : "Malaysia",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_ZA_CL" : {
+    "type" : "CRS",
+    "srcIso" : "ZA",
+    "srcName" : "South Africa",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_MX" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MX",
+    "dstName" : "Mexico",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SI" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SI",
+    "dstName" : "Slovenia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_KN_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KN",
+    "srcName" : "St. Kitts & Nevis",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_MV" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MV",
+    "dstName" : "Maldives",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CBC_CL_SK" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SK",
+    "dstName" : "Slovakia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_MU" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MU",
+    "dstName" : "Mauritius",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_MT" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "MT",
+    "dstName" : "Malta",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_SM" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "SM",
+    "dstName" : "San Marino",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_AR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AR",
+    "dstName" : "Argentina",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_KE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "KE",
+    "srcName" : "Kenya",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2021,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2021]"
+  },
+  "CBC_CL_AT" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AT",
+    "dstName" : "Austria",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_PK_CL" : {
+    "type" : "CRS",
+    "srcIso" : "PK",
+    "srcName" : "Pakistan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018 (DTY)]"
+  },
+  "CBC_CL_AU" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AU",
+    "dstName" : "Australia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_JM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "JM",
+    "srcName" : "Jamaica",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CBC_NO_CL" : {
+    "type" : "CBC",
+    "srcIso" : "NO",
+    "srcName" : "Norway",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AT_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AT",
+    "srcName" : "Austria",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_ID_CL" : {
+    "type" : "CBC",
+    "srcIso" : "ID",
+    "srcName" : "Indonesia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_FO_CL" : {
+    "type" : "CRS",
+    "srcIso" : "FO",
+    "srcName" : "Faroe Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AI_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AI",
+    "srcName" : "Anguilla",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_LV_CL" : {
+    "type" : "CBC",
+    "srcIso" : "LV",
+    "srcName" : "Latvia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SM",
+    "srcName" : "San Marino",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_BB" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BB",
+    "dstName" : "Barbados",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_GG_CL" : {
+    "type" : "CBC",
+    "srcIso" : "GG",
+    "srcName" : "Guernsey",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_MV_CL" : {
+    "type" : "CRS",
+    "srcIso" : "MV",
+    "srcName" : "Maldives",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CRS_AD_CL" : {
+    "type" : "CRS",
+    "srcIso" : "AD",
+    "srcName" : "Andorra",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NR_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NR",
+    "srcName" : "Nauru",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_CL_BE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "BE",
+    "dstName" : "Belgium",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_RU" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "RU",
+    "dstName" : "Russia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_NZ" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "NZ",
+    "dstName" : "New Zealand",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CBC_CL_AW" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AW",
+    "dstName" : "Aruba",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_AZ" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AZ",
+    "dstName" : "Azerbaijan",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_BE_CL" : {
+    "type" : "CBC",
+    "srcIso" : "BE",
+    "srcName" : "Belgium",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_SI_CL" : {
+    "type" : "CBC",
+    "srcIso" : "SI",
+    "srcName" : "Slovenia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_PT" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PT",
+    "dstName" : "Portugal",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AD_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AD",
+    "srcName" : "Andorra",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MC_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MC",
+    "srcName" : "Monaco",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_CL_PL" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PL",
+    "dstName" : "Poland",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_SI_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SI",
+    "srcName" : "Slovenia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_PK" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PK",
+    "dstName" : "Pakistan",
+    "year" : 2019,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018 (DTY)]"
+  },
+  "CBC_CL_DK" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "DK",
+    "dstName" : "Denmark",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_WS_CL" : {
+    "type" : "CRS",
+    "srcIso" : "WS",
+    "srcName" : "Samoa",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_NC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "NC",
+    "srcName" : "New Caledonia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_SX_CL" : {
+    "type" : "CRS",
+    "srcIso" : "SX",
+    "srcName" : "Sint Maarten",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CL_PE" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PE",
+    "dstName" : "Peru",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CRS_CL_PA" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "PA",
+    "dstName" : "Panama",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CL_EE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "EE",
+    "dstName" : "Estonia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_VG_CL" : {
+    "type" : "CRS",
+    "srcIso" : "VG",
+    "srcName" : "British Virgin Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CR",
+    "srcName" : "Costa Rica",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_UY" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "UY",
+    "dstName" : "Uruguay",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_EC_CL" : {
+    "type" : "CRS",
+    "srcIso" : "EC",
+    "srcName" : "Ecuador",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated -  Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CRS_IM_CL" : {
+    "type" : "CRS",
+    "srcIso" : "IM",
+    "srcName" : "Isle of Man",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017 (DTY)]"
+  },
+  "CRS_CL_AD" : {
+    "type" : "CRS",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "AD",
+    "dstName" : "Andorra",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_ES_CL" : {
+    "type" : "CRS",
+    "srcIso" : "ES",
+    "srcName" : "Spain",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_BZ_CL" : {
+    "type" : "CRS",
+    "srcIso" : "BZ",
+    "srcName" : "Belize",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_FI_CL" : {
+    "type" : "CRS",
+    "srcIso" : "FI",
+    "srcName" : "Finland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated -Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_QA_CL" : {
+    "type" : "CRS",
+    "srcIso" : "QA",
+    "srcName" : "Qatar",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2020,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2020]"
+  },
+  "CBC_IS_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IS",
+    "srcName" : "Iceland",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_AZ_CL" : {
+    "type" : "CBC",
+    "srcIso" : "AZ",
+    "srcName" : "Azerbaijan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_PA_CL" : {
+    "type" : "CBC",
+    "srcIso" : "PA",
+    "srcName" : "Panama",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CBC_CL_TH" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "TH",
+    "dstName" : "Thailand",
+    "year" : 2023,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2023]"
+  },
+  "CRS_KZ_CL" : {
+    "type" : "CRS",
+    "srcIso" : "KZ",
+    "srcName" : "Kazakhstan",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_CH" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CH",
+    "dstName" : "Switzerland",
+    "year" : 2018,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2018]"
+  },
+  "CRS_PE_CL" : {
+    "type" : "CRS",
+    "srcIso" : "PE",
+    "srcName" : "Peru",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_CL_CN" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CN",
+    "dstName" : "China",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_CO" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CO",
+    "dstName" : "Colombia",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_TR" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "TR",
+    "dstName" : "Turkey",
+    "year" : 2019,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2019]"
+  },
+  "CBC_HR_CL" : {
+    "type" : "CBC",
+    "srcIso" : "HR",
+    "srcName" : "Croatia",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_DE" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "DE",
+    "dstName" : "Germany",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CW_CL" : {
+    "type" : "CBC",
+    "srcIso" : "CW",
+    "srcName" : "Curaçao",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_IN_CL" : {
+    "type" : "CBC",
+    "srcIso" : "IN",
+    "srcName" : "India",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_CY" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CY",
+    "dstName" : "Cyprus",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_MX_CL" : {
+    "type" : "CBC",
+    "srcIso" : "MX",
+    "srcName" : "Mexico",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2016,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CBC_CL_CZ" : {
+    "type" : "CBC",
+    "srcIso" : "CL",
+    "srcName" : "Chile",
+    "dstIso" : "CZ",
+    "dstName" : "Czechia",
+    "year" : 2017,
+    "dty" : false,
+    "txt" : "[CbC MCAA activated - Effective for taxable periods starting on or after 01 January 2017]"
+  },
+  "CRS_CK_CL" : {
+    "type" : "CRS",
+    "srcIso" : "CK",
+    "srcName" : "Cook Islands",
+    "dstIso" : "CL",
+    "dstName" : "Chile",
+    "year" : 2019,
+    "dty" : true,
+    "txt" : "[CRS MCAA activated - Effective for taxable periods starting on or after 01 January 2018 (DTY)]"
+  }
+}

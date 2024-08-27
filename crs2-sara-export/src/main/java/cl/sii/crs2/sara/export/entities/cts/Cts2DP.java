@@ -36,7 +36,9 @@ public class Cts2DP {
 
 
 
-
+    public String toKey() {
+        return filename.replace(".zip", "");
+    }
 
     @OneToMany(mappedBy = "cts2dp", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderBy("datetime")

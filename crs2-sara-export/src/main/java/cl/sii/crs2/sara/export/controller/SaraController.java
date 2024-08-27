@@ -19,10 +19,18 @@ public class SaraController {
 
     @PostMapping("/submissions")
     public ResponseEntity<String> getSubmissions(){
-        service.updateRelationships();
+        try {
+           // service.updateRelationships();
+           // service.getSaraSubmissions("2024-01-01","2024-12-31");
+            System.out.println("######### INICIANDO PROCESO #########");
+            service.process();
 
-        List<CountryInfo> l=service.getCountryInfo();
+        }catch (Exception e){
+            return new ResponseEntity<>("Error submission", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
 
         return new ResponseEntity<>("Successfully submission", HttpStatus.OK);
+
+
     }
 }

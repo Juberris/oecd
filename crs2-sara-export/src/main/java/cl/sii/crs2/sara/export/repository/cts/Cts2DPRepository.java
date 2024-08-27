@@ -13,4 +13,6 @@ public interface Cts2DPRepository extends JpaRepository<Cts2DP, String> {
     List<Cts2DP> findAllByOrderByDatetimeAsc();
 
     Optional<Cts2DP> findByFilename(String fileName);
+
+
 }

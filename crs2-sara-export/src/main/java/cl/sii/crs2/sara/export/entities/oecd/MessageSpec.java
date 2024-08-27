@@ -1,4 +1,4 @@
-package cl.sii.crs2.sara.export.entities.crs.oecd;
+package cl.sii.crs2.sara.export.entities.oecd;
 
 import jakarta.persistence.*;
 import lombok.*;

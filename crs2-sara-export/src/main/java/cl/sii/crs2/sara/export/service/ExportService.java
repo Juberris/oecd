@@ -4,6 +4,10 @@ import cl.sii.crs2.sara.export.client.SaraClient;
 import cl.sii.crs2.sara.export.entities.CountryInfo;
 import cl.sii.crs2.sara.export.model.SubmissionRequest;
 import cl.sii.crs2.sara.export.model.SubmissionResponse;
+import cl.sii.crs2.sara.export.repository.crs.CrsAccountRepository;
+import cl.sii.crs2.sara.export.repository.crs.CrsControllingPersonRepository;
+import cl.sii.crs2.sara.export.repository.crs.CrsFIRepository;
+import cl.sii.crs2.sara.export.repository.crs.CrsPaymentRepository;
 import cl.sii.crs2.sara.export.util.Cts2ExportScript;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,6 +15,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.apache.commons.io.input.BOMInputStream;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +24,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import jakarta.xml.bind.Unmarshaller;
@@ -53,8 +60,9 @@ public class ExportService {
     @Value("${cl.sii.sara.crs.api.uri}")
     String url;
 
-    @Value("${dir.inbox}")
-    String pathInbox;
+
+    @Value("${crs.export.data.dir}")
+    private String dataDir;
 
     @Value("${dir.main}")
     String pathMain;
@@ -68,12 +76,23 @@ public class ExportService {
     @Autowired
     CsvService csvService;
 
+    @Autowired
+    CrsAccountRepository accountRepository;
+    @Autowired
+    CrsControllingPersonRepository controllingPersonRepository;
+    @Autowired
+    CrsPaymentRepository paymentRepository;
+    @Autowired
+    CrsFIRepository fiRepository;
+
     private Path rootLocation;
     private File inboxDir;
     private Boolean isError;
 
       private void setRootLocation() {
-        Path inboxPath = Paths.get(pathInbox + "//payloads");
+        Path inboxPath = Paths.get(dataDir + "//payloads");
+        boolean result= FileUtils.deleteQuietly(inboxPath.toFile());
+
         if (!Files.exists(inboxPath)) {
             try {
                 Files.createDirectories(inboxPath);
@@ -108,7 +127,6 @@ public class ExportService {
     public void getSaraSubmissions(String from, String to) {
         setRootLocation();
 
-        //Request con datos en duro
         SubmissionRequest req = obtenerRequest(from, to);
         AtomicReference<Integer> nPayloads = new AtomicReference<>(0);
         AtomicReference<Integer> currentPayload = new AtomicReference<>(0);
@@ -125,12 +143,12 @@ public class ExportService {
             submissionResponse.getData().stream().filter(i -> i.getStatus() != null)
                     .filter(i -> i.getStatus().equals("ACCEPTED"))
                     .forEach(i -> {
-                        inboxDir = new File(pathInbox);
+                        //inboxDir = new File(dataDir);
                         this.isError = false;
                         currentPayload.getAndUpdate(value -> value + 1);
                         currentPayload.set(currentPayload.get());
 
-                        log.info("Procesando==> {} - {}", i.getSenderId(), i.getDataPayloadId());
+                        log.info("Descargando==> {} - {}", i.getSenderId(), i.getDataPayloadId());
 //if( i.getDataPayloadId().equals("f96f1ad7-59ef-4149-9b47-fc6fa2222e77")) {
                         String payloadResponse = client.getPayload(i.getSenderId(), i.getSubjectId(), i.getReceptionId(), i.getDataPayloadId(), i.getPeriod());
 
@@ -169,7 +187,9 @@ public class ExportService {
     }
 
 public void process(){
-    setRootLocation();
+
+    this.rootLocation=Paths.get(dataDir + "//payloads");
+    initDataBase();
     File dir = null;
     String actualFile = "";
     try {
@@ -200,6 +220,7 @@ public void process(){
             }catch (ParserConfigurationException | TransformerException | SAXException | JAXBException e) {
                 log.error("Error en parseo xml, archivo ==> {} - {}", actualFile, e.getMessage());
             }
+            System.out.println("Faltan "+ count--);
         }
 
         crsAccountService.updateAgreement();
@@ -218,9 +239,10 @@ public void process(){
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(pathXml);
+        NodeList nodeList = document.getElementsByTagName("*");
+        String targetValue  = "urn:oecd:ties:crs:";
+        String element=hasAttributeWithValue(nodeList, targetValue);
 
-        Element rootElement = document.getDocumentElement();
-        String element=rootElement.getAttribute("xmlns:crs");
         if (element.contains("v1")){
             outContextPath="cl.sii.crs2.sara.export.domain.crs.v1.oecd.ties.crs.v1";
         }else{
@@ -274,5 +296,29 @@ public void process(){
         }
     }
 
+    private static String hasAttributeWithValue(NodeList nodeList, String value) {
+        // Iterar sobre los elementos y buscar el valor en los atributos
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            Node node = nodeList.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element nodeElement = (Element) node;
+                for (int h = 0; h < nodeElement.getAttributes().getLength(); h++) {
+                    if (nodeElement.getAttributes().item(h).getNodeValue().contains(value)) {
+                        if (nodeElement.getAttributes().item(h).getNodeValue().length()<25) {
+                            return nodeElement.getAttributes().item(h).getNodeValue();
+                        }
+                    }
+                }
+            }
+        }
 
+        return "";
+    }
+
+    void initDataBase(){
+       accountRepository.deleteAll();
+       controllingPersonRepository.deleteAll();
+       paymentRepository.deleteAll();
+       fiRepository.deleteAll();
+    }
 }

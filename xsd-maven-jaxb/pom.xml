@@ -79,7 +79,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<schemaDirectory>${project.basedir}/src/main/resources/xsd/generic-status</schemaDirectory>
+					<schemaDirectory>${project.basedir}/src/main/resources/xsd/cbc/v2</schemaDirectory>
 					<schemaIncludes>
 						<include>*.xsd</include>
 					</schemaIncludes>

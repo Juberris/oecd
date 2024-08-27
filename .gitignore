@@ -1,0 +1,8 @@
+
+*.zip
+/crs2-sara-export/main/data/payloads
+/crs2-sara-export/main/data/out
+/crs2-sara-export/main/data/out
+/crs2-sara-export/main/db
+*.cmd
+*.csv

@@ -12,7 +12,7 @@ import java.util.List;
 @ToString
 @RequiredArgsConstructor
 @Entity
-@Table(name = "CRS_ACCOUNT")
+@Table(name = "CRS_ACCOUNT", indexes = {@Index(name="idx_is_agreement", columnList = "is_agreement_crdw")})
 public class CrsAccount {
     //DocRefId
     @Id

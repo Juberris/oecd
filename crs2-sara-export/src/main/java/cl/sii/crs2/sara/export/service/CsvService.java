@@ -46,11 +46,11 @@ public class CsvService {
         }
         List<String> tables = new ArrayList<>();
         try (final Connection c = jdbcTemplate.getDataSource().getConnection()) {
-            try (final ResultSet rsTables = c.getMetaData().getTables(null, "CTS", null, new String[] { "TABLE" })) {
+            try (final ResultSet rsTables = c.getMetaData().getTables(null, "", null, new String[] { "TABLE" })) {
                 while (rsTables.next()) {
                     String name = rsTables.getString("TABLE_NAME");
-                    if (jdbcTemplate.queryForObject("SELECT COUNT(*) FROM CTS." + name, Integer.class) > 0) {
-                        if (!name.equals("COUNTRY_INFO")) {
+                    if (jdbcTemplate.queryForObject("SELECT COUNT(*) FROM " + name, Integer.class) > 0) {
+                        if (name.contains("CRS_")) {
                             tables.add(name);
                         }
                     }
@@ -69,7 +69,7 @@ public class CsvService {
                     File csv = new File(dataOutDir, name + ".csv");
                     log.warn("BGN Generando csv en " + csv);
 
-                    jdbcTemplate.query("SELECT * FROM CTS." + name + " ORDER BY 1,2", new RowCallbackHandler() {
+                    jdbcTemplate.query("SELECT * FROM " + name + " ORDER BY 1,2", new RowCallbackHandler() {
                         @Override
                         public void processRow(ResultSet rs) throws SQLException {
                             ResultSetMetaData rsmd = rs.getMetaData();

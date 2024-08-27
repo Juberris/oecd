@@ -20,6 +20,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class CRSOECD1 {
@@ -35,11 +37,9 @@ public class CRSOECD1 {
         if(fi.getFiId()!=null) {
             crsFIRepository.saveAndFlush(fi);
         }
-        CrsAccount acc=getAccount(crsoecd);
-        if (acc.getIdAccount()!=null){
-            crsAccountRepository.saveAndFlush(acc);
-        }
-        System.out.println("version==> " + crsoecd.getMessageSpec().getMessageRefId());
+      getAccount(crsoecd, fi);
+
+        System.out.println("MessageRefId==> " + crsoecd.getMessageSpec().getMessageRefId());
     }
 
     CrsFI getFI(CRSOECD c){
@@ -79,13 +79,16 @@ public class CRSOECD1 {
         return data;
     }
 
-    CrsAccount getAccount(CRSOECD c){
-        CrsAccount data = new CrsAccount();
+    void getAccount(CRSOECD c, CrsFI fi){
+
         String countryDefault = c.getMessageSpec().getReceivingCountry().value();
-        data.setReceivingCountry(countryDefault);
+        List<CrsAccount> lacc= new ArrayList<>();
         c.getCrsBody().forEach(a->{
             a.getReportingGroup().forEach(r->{
                 r.getAccountReport().forEach(acc->{
+                    //ACCOUNTS
+                    CrsAccount data = new CrsAccount();
+                    data.setReceivingCountry(countryDefault);
                     data.setIdAccount(acc.getDocSpec().getDocRefId());
                     if (acc.getAccountHolder().getAcctHolderType()!=null)
                         data.setOAcctHolderType(acc.getAccountHolder().getAcctHolderType().value());
@@ -236,12 +239,13 @@ public class CRSOECD1 {
                     if (acc.getAccountNumber().getAcctNumberType()!=null) data.setNumberCode(acc.getAccountNumber().getAcctNumberType().value());
                     data.setCurrency(acc.getAccountBalance().getCurrCode()!=null?acc.getAccountBalance().getCurrCode().value():null);
                     data.setBalance(acc.getAccountBalance().getValue());
-
+                    data.setFi(fi);
+                    lacc.add(data);
+                    //crsAccountRepository.save(data);
                 });
             });
 
         });
-        data.setFi(getFI(c));
-        return data;
+        crsAccountRepository.saveAllAndFlush(lacc);
     }
 }
