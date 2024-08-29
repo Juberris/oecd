@@ -5,6 +5,7 @@ import cl.sii.crs2.sara.export.repository.cts.Cts2CacheRepository;
 import cl.sii.crs2.sara.export.repository.cts.Cts2DPRepository;
 import cl.sii.crs2.sara.export.service.exportDB.CRSOECD1_Export;
 import cl.sii.crs2.sara.export.service.exportDB.CRSOECD2_Export;
+import cl.sii.crs2.sara.export.service.exportDB.CrsExportService;
 import cl.sii.crs2.sara.export.util.PackageZipHandler;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Unmarshaller;
@@ -41,6 +42,10 @@ public class CtsService {
     Cts2CacheRepository cts2CacheRepository;
 
     @Autowired
+    CrsExportService exportService;
+
+
+    @Autowired
     PackageZipHandler pzh;
 
     @Autowired
@@ -54,6 +59,7 @@ public class CtsService {
 
         // SE PREFIERE ADAPTAR EL REPOSITORY PARA NO USAR FILTER
         // cts2DPRepository.findAllByOrderByDatetimeAsc().stream().filter(c->c.getIsStatus()==0).forEach(cts2DP -> {
+
 
         AtomicInteger total=new AtomicInteger();
         total.set(cts2DPRepository.findAllByOrderByDatetimeAsc().size());
@@ -77,10 +83,10 @@ public class CtsService {
                             bytes = pzh.getPyld();
                         }
                     }
+
                     if (bytes!=null) {
                         InputStream payload = new ByteArrayInputStream(bytes);
-
-                        procesarPayload(payload, cts.getType());
+                        procesarPayload(payload, cts.getType(), cts.getFilename());
                     }else{
                         log.warn("Unprocessable file {}", cts.getFilename());
                     }
@@ -91,12 +97,17 @@ public class CtsService {
             });
             k.getAndIncrement();
             int saldo= total.get() - k.get();
-            System.out.println("Falta "+ saldo + "de " + total.get());
+            System.out.println("Falta "+ saldo + " de " + total.get());
         });
+        System.out.println("GUARDANDO EN BASE DE DATOS");
+        exportService.saveAll();
+
+        System.out.println("########## PROCESO FINALIZADO #########");
     }
 
 
-   void procesarPayload( InputStream xmlInputStream, String type ){
+
+    public void procesarPayload(InputStream xmlInputStream, String type, String filename ){
        // 1. Convertir InputStream a Document
        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
        DocumentBuilder builder = null;
@@ -123,9 +134,9 @@ public class CtsService {
            Unmarshaller unmarshaller = context.createUnmarshaller();
            if (type.equals("CRS")){
                if (contextPath.contains("v1")){
-                   crsoecd1.process(unmarshaller,xmlInputStream);
+                   crsoecd1.process(unmarshaller,xmlInputStream, filename);
                }else{
-                   crsoecd2.process(unmarshaller,xmlInputStream);
+                   crsoecd2.process(unmarshaller,xmlInputStream, filename);
                }
            }
 
@@ -186,4 +197,5 @@ public class CtsService {
 
         return "";
     }
+
 }

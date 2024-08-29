@@ -8,20 +8,20 @@ import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
 
+
 @Service
 public class CRSOECD1_Export {
     @Autowired
     CrsExportService exportService;
-    public void process(Unmarshaller unmarshaller, InputStream contentXml) throws JAXBException {
+
+
+
+
+    public void process(Unmarshaller unmarshaller, InputStream contentXml, String filename) throws JAXBException {
 
         CRSOECD crsoecd=(CRSOECD) unmarshaller.unmarshal(contentXml);
-        exportService.initCrsExportService(crsoecd,"v1");
+        exportService.initCrsExportService(crsoecd,"v1", filename);
         exportService.process();
-
-
-
-
-
     }
 
 }

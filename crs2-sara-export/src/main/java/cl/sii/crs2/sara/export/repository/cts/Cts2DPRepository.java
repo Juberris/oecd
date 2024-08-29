@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface Cts2DPRepository extends JpaRepository<Cts2DP, String> {
 
-    @Query("SELECT e FROM Cts2DP e WHERE e.isStatus=0 ORDER BY e.datetime ASC")
+    @Query("SELECT e FROM Cts2DP e WHERE e.isStatus=0 and e.type='CRS' ORDER BY e.datetime ASC")
     List<Cts2DP> findAllByOrderByDatetimeAsc();
 
     Optional<Cts2DP> findByFilename(String fileName);

@@ -17,9 +17,12 @@ public class Cts2DPProcess {
     @Id
     private String id ;
     private Timestamp datetime = new Timestamp(System.currentTimeMillis());
+    @Column(name = "status_code")
     private Integer statusCode;
     @Column(columnDefinition = "CLOB")
     private String info;
+
+
     @ManyToOne(fetch = FetchType.LAZY)
     @ToString.Exclude
     private Cts2DP cts2dp;

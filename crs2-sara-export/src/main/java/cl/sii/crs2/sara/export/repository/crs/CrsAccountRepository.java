@@ -15,7 +15,7 @@ public interface CrsAccountRepository extends JpaRepository<CrsAccount, String> 
 
 	@Modifying
 	@Query("UPDATE CrsAccount e SET e.isAgreement = 'N'")
-	int updateIniIsAgreement();
+	void updateIniIsAgreement();
 
 	@Query(value = "SELECT a FROM CrsAccount a WHERE a.fi.id = :fiId")
 	Collection<CrsAccount> findAllByFiId(@Param("fiId") String fiId);

@@ -21,13 +21,17 @@ public class Cts2DP {
     private Timestamp datetime = new Timestamp(System.currentTimeMillis());
     private String dst;
     private String filename;
+    @Column(name = "is_status")
     private Integer isStatus;
     private String mrid;
+    @Column(name = "mrid_ref")
     private String mridRef;
     private String sfid;
     private String src;
+    @Column(name = "status_code")
     private Integer statusCode;
     private String tid;
+    @Column(name = "tid_ref")
     private String tidRef;
     private String type;
     private String utc;
