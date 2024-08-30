@@ -1,6 +1,8 @@
 package cl.sii.cts2.data.export.service.exportDB;
 
 
+
+import cl.sii.cts2.data.export.domain.crs.v2.oecd.ties.crs.v2.CrsBodyType;
 import cl.sii.cts2.data.export.entities.crs.CrsAccountReport;
 import cl.sii.cts2.data.export.entities.crs.CrsAddress;
 import cl.sii.cts2.data.export.entities.crs.CrsReportingFI;
@@ -8,6 +10,10 @@ import cl.sii.cts2.data.export.entities.oecd.MessageSpec;
 import cl.sii.cts2.data.export.repository.CrsReportingFIRepository;
 import cl.sii.cts2.data.export.repository.MessageSpecRepository;
 import cl.sii.cts2.data.export.util.Ids;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import lombok.Getter;
@@ -224,7 +230,7 @@ public class CrsExportService {
                 fi.setCreatedBy("AI");
                 fi.setCrsReportingId(Ids.INSTANCE.id());
                 lFI.add(fi);
-
+                b.getReportingGroup().forEach(this::cargarAccountReport);
             });
         }
 
@@ -232,16 +238,44 @@ public class CrsExportService {
 
     void cargarAccountReport(Object reportingGroup){
 
-        Field[] fields = reportingGroup.getClass().getDeclaredFields();
-        for (Field field : fields) {
-            field.setAccessible(true); // Permite acceder a campos privados
+
+            ObjectMapper objectMapper = new ObjectMapper();
             try {
-                Object value = field.get(reportingGroup);
-                System.out.println("Campo: " + field.getName() + ", Valor: " + value);
-            } catch (IllegalAccessException e) {
+                String jsonString = objectMapper.writeValueAsString(reportingGroup);
+
+                objectMapper = new ObjectMapper();
+                JsonNode rootNode = objectMapper.readTree(jsonString);
+                JsonNode acc = rootNode.get("accountReport");
+                if (acc!=null){
+                    ArrayNode listAcc = (ArrayNode) acc;
+
+                    listAcc.forEach(i->{
+                        CrsAccountReport ar= new CrsAccountReport();
+                        ar.setMessageRefId(this.messageRefId);
+                        ar.setDocTypeIndic(i.get("docSpec").get("docTypeIndic").toString());
+                        ar.setDocRefId(i.get("docSpec").get("docRefId").toString());
+                        ar.setCorrDocRefId(i.get("docSpec").get("corrDocRefId").toString());
+                        ar.setCorrMessageRefId(i.get("docSpec").get("corrMessageRefId")!=null?i.get("docSpec").get("corrMessageRefId").toString():null);
+
+
+                        System.out.println(i.get("accountNumber").get("value"));
+                        System.out.println(i.get("accountNumber").get("acctNumberType"));
+                        System.out.println(i.get("accountNumber").get("undocumentedAccount"));
+                        System.out.println(i.get("accountNumber").get("closedAccount"));
+                        System.out.println(i.get("accountNumber").get("dormantAccount"));
+
+                        System.out.println(i.get("accountBalance").get("value"));
+                        System.out.println(i.get("accountBalance").get("currCode"));
+
+                    });
+
+                    System.out.println("i.toString()");
+                }
+                System.out.println(rootNode.toString());
+            } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
-        }
+
 
     }
 
