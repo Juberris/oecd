@@ -15,7 +15,7 @@ import java.util.Set;
 @ToString
 @RequiredArgsConstructor
 @Entity
-    @Table(name = "MESSAGE_SPEC")
+@Table(name = "MESSAGE_SPEC")
 public class MessageSpec {
     @Id
     @Column(name = "message_ref_id")
@@ -26,7 +26,7 @@ public class MessageSpec {
     String transmittingCountry;
     @Column(name = "receiving_country")
     String receivingCountry;
-    @Column(name = "message-type")
+    @Column(name = "message_type")
     String messageType;
     @Column(name = "warning", length = 2000)
     String warning;

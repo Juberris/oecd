@@ -1,12 +1,9 @@
 package cl.sii.cts2.data.export.service.exportDB;
 
 
-
-import cl.sii.cts2.data.export.domain.crs.v2.oecd.ties.crs.v2.CrsBodyType;
-import cl.sii.cts2.data.export.entities.crs.CrsAccountReport;
-import cl.sii.cts2.data.export.entities.crs.CrsAddress;
-import cl.sii.cts2.data.export.entities.crs.CrsReportingFI;
+import cl.sii.cts2.data.export.entities.crs.*;
 import cl.sii.cts2.data.export.entities.oecd.MessageSpec;
+import cl.sii.cts2.data.export.repository.CrsAccountReportRepository;
 import cl.sii.cts2.data.export.repository.CrsReportingFIRepository;
 import cl.sii.cts2.data.export.repository.MessageSpecRepository;
 import cl.sii.cts2.data.export.util.Ids;
@@ -21,7 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.lang.reflect.Field;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -41,10 +39,14 @@ public class CrsExportService {
     List<CrsReportingFI> lFI= new ArrayList<>();
     @Getter
     List<MessageSpec> lMS= new ArrayList<>();
+    @Getter
+    List<CrsAccountReport> LAR= new ArrayList<>();
 
     @Autowired
     MessageSpecRepository messageSpecRepository;
 
+    @Autowired
+    CrsAccountReportRepository accountReportRepository;
     @Autowired
     CrsReportingFIRepository reportingFIRepository;
     @PersistenceContext
@@ -160,7 +162,7 @@ public class CrsExportService {
                         }
 
                     });
-                    address.setIdAddress(Ids.INSTANCE.id());
+                    address.setCrsAddressId(Ids.INSTANCE.id());
                     fi.addAdress(address);
 
                 });
@@ -168,12 +170,8 @@ public class CrsExportService {
                 fi.setCreatedBy("AI");
                 fi.setCrsReportingId(Ids.INSTANCE.id());
                 lFI.add(fi);
-                //                    r.getAccountReport().forEach(a->{
-                //                        cl.sii.cts2.data.export.domain.crs.v1.oecd.ties.crs.v1.AccountHolderType ah=a.getAccountHolder();
-                //                        ah.
-                //                    });
                 b.getReportingGroup().forEach(this::cargarAccountReport);
-               // reportingFIRepository.saveAndFlush(fi);
+
             });
 
         }else{
@@ -223,7 +221,7 @@ public class CrsExportService {
                         }
 
                     });
-                    address.setIdAddress(Ids.INSTANCE.id());
+                    address.setCrsAddressId(Ids.INSTANCE.id());
                     fi.addAdress(address);
                 });
                 fi.setCreatedAt(new Date());
@@ -238,7 +236,6 @@ public class CrsExportService {
 
     void cargarAccountReport(Object reportingGroup){
 
-
             ObjectMapper objectMapper = new ObjectMapper();
             try {
                 String jsonString = objectMapper.writeValueAsString(reportingGroup);
@@ -246,39 +243,285 @@ public class CrsExportService {
                 objectMapper = new ObjectMapper();
                 JsonNode rootNode = objectMapper.readTree(jsonString);
                 JsonNode acc = rootNode.get("accountReport");
-                if (acc!=null){
+                if (!acc.isNull()){
                     ArrayNode listAcc = (ArrayNode) acc;
 
                     listAcc.forEach(i->{
                         CrsAccountReport ar= new CrsAccountReport();
+                        ar.setCrsAccountReportId(Ids.INSTANCE.id());
                         ar.setMessageRefId(this.messageRefId);
-                        ar.setDocTypeIndic(i.get("docSpec").get("docTypeIndic").toString());
-                        ar.setDocRefId(i.get("docSpec").get("docRefId").toString());
-                        ar.setCorrDocRefId(i.get("docSpec").get("corrDocRefId").toString());
-                        ar.setCorrMessageRefId(i.get("docSpec").get("corrMessageRefId")!=null?i.get("docSpec").get("corrMessageRefId").toString():null);
+                        ar.setDocTypeIndic(i.get("docSpec").get("docTypeIndic").textValue());
+                        ar.setDocRefId(i.get("docSpec").get("docRefId").textValue());
+                        ar.setCorrDocRefId(i.get("docSpec").get("corrDocRefId").textValue());
+                        ar.setCorrMessageRefId(i.get("docSpec").get("corrMessageRefId")!=null?i.get("docSpec").get("corrMessageRefId").textValue():null);
+                        ar.setAccountNumber(i.get("accountNumber").get("value").textValue());
+                        ar.setAcctNumberType(i.get("accountNumber").get("acctNumberType").textValue());
+                        ar.setUndocumentedAccount(i.get("accountNumber").get("undocumentedAccount").toString());
+                        ar.setClosedAccount(i.get("accountNumber").get("closedAccount").toString());
+                        ar.setDormantAccount(i.get("accountNumber").get("dormantAccount").toString());
+                        ar.setAccountBalance(i.get("accountBalance").get("value").toString());
+                        ar.setCurrCode(i.get("accountBalance").get("currCode").textValue());
+                        CrsAccountHolder ah= new CrsAccountHolder();
 
+                        JsonNode indiv= i.get("accountHolder").get("individual");
+                        JsonNode organi= i.get("accountHolder").get("organisation");
+                        if(!indiv.isNull()){
+                            getIndivOrgani(indiv,ar,ah,"I");
+                        }
+                        if(!organi.isNull()){
+                            ah.setAcctHolderType(i.get("accountHolder").get("acctHolderType").textValue());
+                            getIndivOrgani(organi,ar,ah,"O");
+                        }
 
-                        System.out.println(i.get("accountNumber").get("value"));
-                        System.out.println(i.get("accountNumber").get("acctNumberType"));
-                        System.out.println(i.get("accountNumber").get("undocumentedAccount"));
-                        System.out.println(i.get("accountNumber").get("closedAccount"));
-                        System.out.println(i.get("accountNumber").get("dormantAccount"));
+                        JsonNode ctrlngPerson=i.get("controllingPerson");
+                        ArrayNode listCP = (ArrayNode) ctrlngPerson;
+                        listCP.forEach(p->{
+                            CrsControllingPerson cp=new CrsControllingPerson();
+                            getControllingPerson(p,ar,cp);
+                        });
 
-                        System.out.println(i.get("accountBalance").get("value"));
-                        System.out.println(i.get("accountBalance").get("currCode"));
-
+                        JsonNode payment=i.get("payment");
+                        getPayment(payment,ar);
+                        this.LAR.add(ar);
                     });
 
-                    System.out.println("i.toString()");
                 }
-                System.out.println(rootNode.toString());
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
 
 
     }
+    void getPayment(JsonNode pay,CrsAccountReport ar){
+        if(!pay.isNull()){
+            ArrayNode listPay = (ArrayNode) pay;
+            listPay.forEach(p->{
+                CrsPayment py=new CrsPayment();
+                py.setType(p.get("type").textValue());
+               JsonNode pa=p.get("paymentAmnt");
+               if(!pa.isNull()){
+                   py.setPaymentAmnt(pa.get("value").toString());
+                   py.setCurrCode(pa.get("currCode").textValue());
+               }
+                py.setIdPayment(Ids.INSTANCE.id());
+                ar.addCrsPayment(py);
+            });
 
+
+        }
+
+    }
+void getControllingPerson(JsonNode ctrlP,CrsAccountReport ar, CrsControllingPerson cp){
+    cp.setCtrlgPersonType(ctrlP.get("ctrlgPersonType").textValue());
+
+    JsonNode rcc = ctrlP.get("individual").get("resCountryCode");
+    if(!rcc.isNull()){
+        ArrayNode listRcc = (ArrayNode) rcc;
+        String codeCountry="";
+        listRcc.forEach(r->{
+            cp.setResCountryCode(r.textValue());
+        });
+    }
+    JsonNode tin = ctrlP.get("individual").get("tin");
+    if (!tin.isNull()) {
+        ArrayNode listTin = (ArrayNode) tin;
+        listTin.forEach(t -> {
+            cp.setTIN(t.get("value").textValue());
+            cp.setIssuedBy(t.get("issuedBy").textValue());
+        });
+    }
+
+    JsonNode name= ctrlP.get("individual").get("name");
+    ArrayNode listName = (ArrayNode) name;
+    if (!name.isNull()){
+            listName.forEach(n -> {
+                cp.setFirstName(n.get("firstName").get("value").textValue());
+                JsonNode mname = n.get("middleName");
+                if (!mname.isNull()) {
+                    ArrayNode listMName = (ArrayNode) mname;
+                    listMName.forEach(mi -> {
+                        cp.setMiddleName(mi.get("value").textValue());
+                    });
+                }
+                cp.setLastName(n.get("lastName").get("value").textValue());
+            });
+    }
+
+    JsonNode addr=ctrlP.get("individual").get("address");
+    if(!addr.isNull()){
+        ArrayNode listAddr = (ArrayNode) addr;
+        listAddr.forEach(ad->{
+            CrsAddress address= new CrsAddress();
+            JsonNode content=ad.get("content");
+            if (!content.isNull()) {
+                ArrayNode listContent = (ArrayNode) content;
+                listContent.forEach(c -> {
+                    if(c.get("name").textValue().contains("CountryCode")){
+                        address.setCountryCode(c.get("value").textValue());
+                    }
+                    if(c.get("name").textValue().contains("AddressFix")){
+                        JsonNode nodeFix =c.get("value");
+                        if(!nodeFix.isNull()){
+                            address.setAddressFixStreet(nodeFix.get("street").textValue());
+                            address.setAddressFixBuildingIdentifier(nodeFix.get("buildingIdentifier").textValue());
+                            address.setAddressFixSuiteIdentifier(nodeFix.get("suiteIdentifier").textValue());
+                            address.setAddressFixFloorIdentifier(nodeFix.get("floorIdentifier").textValue());
+                            address.setAddressFixDistrictName(nodeFix.get("districtName").textValue());
+                            address.setAddressFixPOB(nodeFix.get("pob").textValue());
+                            address.setAddressFixPostCode(nodeFix.get("postCode").textValue());
+                            address.setAddressFixCity(nodeFix.get("city").textValue());
+                            address.setAddressFixCountrySubentity(nodeFix.get("countrySubentity").textValue());
+                        }
+
+                    }
+                    if(c.get("name").textValue().contains("AddressFree")){
+                        address.setAddressFree(c.get("value").textValue());
+                    }
+
+                    address.setCrsAddressId(Ids.INSTANCE.id());
+                    cp.addAdress(address);
+                });
+            }
+            cp.setControllingPersonId(Ids.INSTANCE.id());
+            ar.addCrsControllingPerson(cp);
+        });
+    }
+
+    JsonNode nation = ctrlP.get("individual").get("nationality");
+    if (!nation.isNull()) {
+        ArrayNode listNation = (ArrayNode) nation;
+        listNation.forEach(na -> {
+            cp.setNationality(na.textValue());
+        });
+    }
+
+    JsonNode birth=ctrlP.get("individual").get("birthInfo");
+    if(!birth.isNull()){
+        Date date = new Date(birth.get("birthDate").asLong());
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        cp.setBirthDate(formatter.format(date));
+        cp.setBirthCity(birth.get("city").textValue());
+        cp.setBirthCitySubentity(birth.get("citySubentity").textValue());
+        cp.setBirthCountryCode(birth.get("countryInfo").isNull()?null:birth.get("countryInfo").get("countryCode").textValue());
+    }
+}
+
+    void getIndivOrgani(JsonNode IndivOrg,CrsAccountReport ar, CrsAccountHolder ah, String type){
+
+            JsonNode rcc = IndivOrg.get("resCountryCode");
+            if(!rcc.isNull()){
+                ArrayNode listRcc = (ArrayNode) rcc;
+                String codeCountry="";
+                listRcc.forEach(r->{
+                    ah.setResCountryCode(r.textValue());
+                });
+            }
+
+            if(type.equals("I")) {
+                JsonNode tin = IndivOrg.get("tin");
+                if (!tin.isNull()) {
+                    ArrayNode listTin = (ArrayNode) tin;
+                    listTin.forEach(t -> {
+                        ah.setAccTIN(t.get("value").textValue());
+                        ah.setIssuedBy(t.get("issuedBy").textValue());
+                    });
+                }
+            }else{
+                JsonNode tin = IndivOrg.get("in");
+                if (!tin.isNull()) {
+                    ArrayNode listTin = (ArrayNode) tin;
+                    listTin.forEach(t -> {
+                        ah.setAccIN(t.get("value").textValue());
+                        ah.setIssuedBy(t.get("issuedBy").textValue());
+                    });
+                }
+            }
+
+            JsonNode name=IndivOrg.get("name");
+           ArrayNode listName = (ArrayNode) name;
+            if (!name.isNull()){
+                if (type.equals("I")) {
+                    listName.forEach(n -> {
+                        ah.setFirstName(n.get("firstName").get("value").textValue());
+                        JsonNode mname = n.get("middleName");
+                        if (!mname.isNull()) {
+                            ArrayNode listMName = (ArrayNode) mname;
+                            listMName.forEach(mi -> {
+                                ah.setMiddleName(mi.get("value").textValue());
+                            });
+                        }
+                        ah.setLastName(n.get("lastName").get("value").textValue());
+                    });
+                } else if (type.equals("O")){
+                    listName.forEach(n -> {
+                            ah.setFirstName(n.get("value").textValue());
+                            });
+                }
+
+            }
+
+            JsonNode addr=IndivOrg.get("address");
+            if(!addr.isNull()){
+                ArrayNode listAddr = (ArrayNode) addr;
+                listAddr.forEach(ad->{
+                    CrsAddress address= new CrsAddress();
+                    JsonNode content=ad.get("content");
+                    if (!content.isNull()) {
+                        ArrayNode listContent = (ArrayNode) content;
+                        listContent.forEach(c -> {
+                            if(c.get("name").textValue().contains("CountryCode")){
+                                address.setCountryCode(c.get("value").textValue());
+                            }
+                            if(c.get("name").textValue().contains("AddressFix")){
+                                JsonNode nodeFix =c.get("value");
+                                if(!nodeFix.isNull()){
+                                    address.setAddressFixStreet(nodeFix.get("street").textValue());
+                                    address.setAddressFixBuildingIdentifier(nodeFix.get("buildingIdentifier").textValue());
+                                    address.setAddressFixSuiteIdentifier(nodeFix.get("suiteIdentifier").textValue());
+                                    address.setAddressFixFloorIdentifier(nodeFix.get("floorIdentifier").textValue());
+                                    address.setAddressFixDistrictName(nodeFix.get("districtName").textValue());
+                                    address.setAddressFixPOB(nodeFix.get("pob").textValue());
+                                    address.setAddressFixPostCode(nodeFix.get("postCode").textValue());
+                                    address.setAddressFixCity(nodeFix.get("city").textValue());
+                                    address.setAddressFixCountrySubentity(nodeFix.get("countrySubentity").textValue());
+                                }
+
+                            }
+                            if(c.get("name").textValue().contains("AddressFree")){
+                                address.setAddressFree(c.get("value").textValue());
+                            }
+
+                            address.setCrsAddressId(Ids.INSTANCE.id());
+                            ah.addAdress(address);
+                        });
+                    }
+
+                });
+            }
+            if(type.equals("I")) {
+                    JsonNode nation = IndivOrg.get("nationality");
+                    if (!nation.isNull()) {
+                        ArrayNode listNation = (ArrayNode) nation;
+                        listNation.forEach(na -> {
+                            ah.setNationality(na.textValue());
+                        });
+                    }
+
+                JsonNode birth=IndivOrg.get("birthInfo");
+                if(!birth.isNull()){
+
+                    Date date = new Date(birth.get("birthDate").asLong());
+                    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                    ah.setBirthDate(formatter.format(date));
+                    ah.setBirthCity(birth.get("city").textValue());
+                    ah.setBirthCitySubentity(birth.get("citySubentity").textValue());
+                    ah.setBirthCountryCode(birth.get("countryInfo").isNull()?null:birth.get("countryInfo").get("countryCode").textValue());
+                }
+            }
+            ah.setCrsAccountHolderId(Ids.INSTANCE.id());
+            ar.setCrsAccountHolder(ah);
+            ah.setCrsAccountReport(ar);
+    }
     @Transactional
     public void saveAll(){
         int batchSize = 100;
@@ -301,6 +544,19 @@ public class CrsExportService {
                 entityManager.clear();
             }
         });
+
+
+        i.set(0);
+        this.LAR.forEach(a->{
+            accountReportRepository.saveAndFlush(a);
+            i.getAndIncrement();
+            if (i.get() % batchSize == 0) {
+                entityManager.flush();
+                entityManager.clear();
+            }
+        });
+
+
     }
 
 }

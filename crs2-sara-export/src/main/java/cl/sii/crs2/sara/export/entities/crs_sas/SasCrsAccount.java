@@ -1,4 +1,4 @@
-package cl.sii.crs2.sara.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs_sas;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,8 +12,8 @@ import java.util.List;
 @ToString
 @RequiredArgsConstructor
 @Entity
-@Table(name = "CRS_ACCOUNT", indexes = {@Index(name="idx_is_agreement", columnList = "is_agreement_crdw")})
-public class CrsAccount {
+@Table(name = "SAS_CRS_ACCOUNT", indexes = {@Index(name="idx_is_agreement", columnList = "is_agreement_crdw")})
+public class SasCrsAccount {
     //DocRefId
     @Id
     @Column(name = "id_account_crdw")
@@ -81,23 +81,23 @@ public class CrsAccount {
 
     @ManyToOne(optional = false)//@OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "fi_id_crdw", referencedColumnName = "fi_id_crdw", foreignKey = @ForeignKey(name = "FK_CRS_FI"))
-    private CrsFI fi;
+    private SasCrsFI fi;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsAccount")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "sasCrsAccount")
     @ToString.Exclude
-    List<CrsControllingPerson> crsControllingPersonList = new ArrayList<>();
+    List<SasCrsControllingPerson> sasCrsControllingPersonList = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsAccount")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "sasCrsAccount")
     @ToString.Exclude
-    List<CrsPayment> crsPaymentList = new ArrayList<>();
+    List<SasCrsPayment> sasCrsPaymentList = new ArrayList<>();
 
-    public void addPayment(CrsPayment p) {
-        crsPaymentList.add(p);
-        p.setCrsAccount(this);
+    public void addPayment(SasCrsPayment p) {
+        sasCrsPaymentList.add(p);
+        p.setSasCrsAccount(this);
     }
 
-    public void addControllingPerson(CrsControllingPerson cp) {
-        crsControllingPersonList.add(cp);
-        cp.setCrsAccount(this);
+    public void addControllingPerson(SasCrsControllingPerson cp) {
+        sasCrsControllingPersonList.add(cp);
+        cp.setSasCrsAccount(this);
     }
 }

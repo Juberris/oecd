@@ -3,7 +3,6 @@ package cl.sii.crs2.sara.export.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -13,7 +12,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-public class H2EntityManagerConfig {
+public class EntityManagerConfig {
     @Autowired
     private DataSource dataSource;
 
@@ -32,7 +31,8 @@ public class H2EntityManagerConfig {
     private Properties hibernateProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+        //properties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         return properties;
     }
 

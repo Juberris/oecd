@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class CrsPayment {
 
     @Id
-    @Column(name = "id_payment")
+    @Column(name = "crs_payment_id")
     Long idPayment;
 
 
@@ -19,11 +19,11 @@ public class CrsPayment {
     @Column(name = "curr_code")
     String currCode;
     @Column(name = "payment_amnt")
-    BigDecimal paymentAmnt;
+    String paymentAmnt;
 
 
     @ManyToOne
-    @JoinColumn(name = "account_report_id", referencedColumnName = "account_report_id", foreignKey = @ForeignKey(name = "FK_CRS_PAY"))
-    CrsAccountReport crsAccount;
+    @JoinColumn(name = "crs_account_report_id", referencedColumnName = "crs_account_report_id", foreignKey = @ForeignKey(name = "FK_CRS_PAY"))
+    CrsAccountReport crsAccountReport;
 
 }

@@ -7,12 +7,12 @@ import cl.sii.crs2.sara.export.domain.crs.v1.oecd.ties.commontypesfatcacrs.v1.Ad
 import cl.sii.crs2.sara.export.domain.crs.v1.oecd.ties.crs.v1.CRSOECD;
 import cl.sii.crs2.sara.export.domain.crs.v1.oecd.ties.crs.v1.PersonPartyType;
 import cl.sii.crs2.sara.export.domain.crs.v1.oecd.ties.isocrstypes.v1.CountryCodeType;
-import cl.sii.crs2.sara.export.entities.crs.CrsAccount;
-import cl.sii.crs2.sara.export.entities.crs.CrsControllingPerson;
-import cl.sii.crs2.sara.export.entities.crs.CrsFI;
-import cl.sii.crs2.sara.export.entities.crs.CrsPayment;
-import cl.sii.crs2.sara.export.repository.crs.CrsAccountRepository;
-import cl.sii.crs2.sara.export.repository.crs.CrsFIRepository;
+import cl.sii.crs2.sara.export.entities.crs_sas.SasCrsAccount;
+import cl.sii.crs2.sara.export.entities.crs_sas.SasCrsControllingPerson;
+import cl.sii.crs2.sara.export.entities.crs_sas.SasCrsFI;
+import cl.sii.crs2.sara.export.entities.crs_sas.SasCrsPayment;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsAccountRepository;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsFIRepository;
 import cl.sii.crs2.sara.export.util.Ids;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Unmarshaller;
@@ -26,24 +26,24 @@ import java.util.List;
 @Service
 public class CRSOECD1 {
     @Autowired
-    CrsFIRepository crsFIRepository;
+    SasCrsFIRepository sasCrsFIRepository;
 
     @Autowired
-    CrsAccountRepository crsAccountRepository;
+    SasCrsAccountRepository crsAccountRepository;
 
     public void process(Unmarshaller unmarshaller, File xmlFile) throws JAXBException {
         CRSOECD crsoecd=(CRSOECD) unmarshaller.unmarshal(xmlFile);
-        CrsFI fi=getFI(crsoecd);
+        SasCrsFI fi=getFI(crsoecd);
         if(fi.getFiId()!=null) {
-            crsFIRepository.saveAndFlush(fi);
+            sasCrsFIRepository.saveAndFlush(fi);
         }
       getAccount(crsoecd, fi);
 
         System.out.println("MessageRefId==> " + crsoecd.getMessageSpec().getMessageRefId());
     }
 
-    CrsFI getFI(CRSOECD c){
-        CrsFI data = new CrsFI();
+    SasCrsFI getFI(CRSOECD c){
+        SasCrsFI data = new SasCrsFI();
         String countryDefault = c.getMessageSpec().getReceivingCountry().value();
         c.getCrsBody().forEach(b->{
             data.setFiId(b.getReportingFI().getDocSpec().getDocRefId());
@@ -79,22 +79,22 @@ public class CRSOECD1 {
         return data;
     }
 
-    void getAccount(CRSOECD c, CrsFI fi){
+    void getAccount(CRSOECD c, SasCrsFI fi){
 
         String countryDefault = c.getMessageSpec().getReceivingCountry().value();
-        List<CrsAccount> lacc= new ArrayList<>();
+        List<SasCrsAccount> lacc= new ArrayList<>();
         c.getCrsBody().forEach(a->{
             a.getReportingGroup().forEach(r->{
                 r.getAccountReport().forEach(acc->{
                     //ACCOUNTS
-                    CrsAccount data = new CrsAccount();
+                    SasCrsAccount data = new SasCrsAccount();
                     data.setReceivingCountry(countryDefault);
                     data.setIdAccount(acc.getDocSpec().getDocRefId());
                     if (acc.getAccountHolder().getAcctHolderType()!=null)
                         data.setOAcctHolderType(acc.getAccountHolder().getAcctHolderType().value());
 
                     acc.getPayment().forEach(p->{
-                        CrsPayment cp = new CrsPayment();
+                        SasCrsPayment cp = new SasCrsPayment();
                         cp.setIdPayment(Ids.INSTANCE.id());
                         cp.setPaymentType(p.getType().value());
                         cp.setPayCurrency(p.getPaymentAmnt().getCurrCode().value());
@@ -179,7 +179,7 @@ public class CRSOECD1 {
                         });
 
                         acc.getControllingPerson().forEach(cp->{
-                            CrsControllingPerson ccp = new CrsControllingPerson();
+                            SasCrsControllingPerson ccp = new SasCrsControllingPerson();
                             ccp.setIdControllingPerson(Ids.INSTANCE.id());
                             if(cp.getIndividual()!=null) {
                                cp.getIndividual().getName().forEach(n -> {

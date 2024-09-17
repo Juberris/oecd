@@ -10,3 +10,4 @@
 crs2-sara-export/mvnw
 cts-data-xml/mvnw
 crs2-sara-export/.mvn/wrapper/maven-wrapper.properties
+*.xml

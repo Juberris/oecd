@@ -20,7 +20,7 @@ public class H2EntityManagerConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
-        em.setPackagesToScan("cl.sii.cts2.data.export.entities");  // Ajusta al paquete donde están tus entidades
+        em.setPackagesToScan("cl.sii.cts2.data.export.entities");  // Ajusta al paquete donde están las entidades
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

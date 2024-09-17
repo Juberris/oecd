@@ -1,4 +1,4 @@
-package cl.sii.cts2.data.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs_sas;
 
 import lombok.Data;
 
@@ -9,8 +9,8 @@ import jakarta.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "CRS_FI")
-public class CrsFI {
+@Table(name = "SAS_CRS_FI")
+public class SasCrsFI {
 
     //DocRefId
     @Id

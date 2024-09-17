@@ -4,10 +4,10 @@ import cl.sii.crs2.sara.export.client.SaraClient;
 import cl.sii.crs2.sara.export.entities.CountryInfo;
 import cl.sii.crs2.sara.export.model.SubmissionRequest;
 import cl.sii.crs2.sara.export.model.SubmissionResponse;
-import cl.sii.crs2.sara.export.repository.crs.CrsAccountRepository;
-import cl.sii.crs2.sara.export.repository.crs.CrsControllingPersonRepository;
-import cl.sii.crs2.sara.export.repository.crs.CrsFIRepository;
-import cl.sii.crs2.sara.export.repository.crs.CrsPaymentRepository;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsAccountRepository;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsControllingPersonRepository;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsFIRepository;
+import cl.sii.crs2.sara.export.repository.crs_sas.SasCrsPaymentRepository;
 import cl.sii.crs2.sara.export.util.Cts2ExportScript;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,7 +47,7 @@ import static cl.sii.crs2.sara.export.util.Xml.read;
 
 @Service
 @Slf4j
-public class ExportService {
+public class ExportSasService {
     @Autowired
     SaraClient client;
 
@@ -77,20 +77,20 @@ public class ExportService {
     CsvService csvService;
 
     @Autowired
-    CrsAccountRepository accountRepository;
+    SasCrsAccountRepository accountRepository;
     @Autowired
-    CrsControllingPersonRepository controllingPersonRepository;
+    SasCrsControllingPersonRepository controllingPersonRepository;
     @Autowired
-    CrsPaymentRepository paymentRepository;
+    SasCrsPaymentRepository paymentRepository;
     @Autowired
-    CrsFIRepository fiRepository;
+    SasCrsFIRepository fiRepository;
 
     private Path rootLocation;
     private File inboxDir;
     private Boolean isError;
 
       private void setRootLocation() {
-        Path inboxPath = Paths.get(dataDir + "//payloads");
+        Path inboxPath = Paths.get(dataDir + "//payloads_sara");
         boolean result= FileUtils.deleteQuietly(inboxPath.toFile());
 
         if (!Files.exists(inboxPath)) {
@@ -188,7 +188,7 @@ public class ExportService {
 
 public void process(){
 
-    this.rootLocation=Paths.get(dataDir + "//payloads");
+    this.rootLocation=Paths.get(dataDir + "//payloads-sara");
     initDataBase();
     File dir = null;
     String actualFile = "";
@@ -232,6 +232,53 @@ public void process(){
         log.info("Error en la lectura de archivos :{}", e.getMessage());
     }
 }
+
+    public void processPayloads(){
+
+        this.rootLocation=Paths.get(dataDir + "//payloads");
+        initDataBase();
+        File dir = null;
+        String actualFile = "";
+        try {
+            dir = new File(String.valueOf(this.rootLocation)).getCanonicalFile();
+            FileFilter fileFilter = new WildcardFileFilter(new String[]{"*.xml"});
+            File[] files = dir.listFiles(fileFilter);
+            int count = files != null ? files.length : 0;
+            Integer v1=0;
+            Integer v2=0;
+            for (final File fileEntry : Objects.requireNonNull(dir.listFiles(fileFilter))){
+                actualFile=fileEntry.getName();
+                log.info(String.format("Se encontro archivo: %s ", actualFile));
+
+                try {
+
+                    String contextPath=getVersion(fileEntry.getAbsolutePath());
+                    JAXBContext context = JAXBContext.newInstance(contextPath);
+                    Unmarshaller unmarshaller = context.createUnmarshaller();
+                    File xmlFile = new File(fileEntry.getAbsolutePath());
+
+                    if (contextPath.contains("v1")){
+                        v1++;
+                        crsoecd1.process(unmarshaller,xmlFile);
+                    }else{
+                        v2++;
+                        crsoecd2.process(unmarshaller,xmlFile);
+                    }
+                }catch (ParserConfigurationException | TransformerException | SAXException | JAXBException e) {
+                    log.error("Error en parseo xml, archivo ==> {} - {}", actualFile, e.getMessage());
+                }
+                System.out.println("Faltan "+ count--);
+            }
+
+            crsAccountService.updateAgreement();
+            log.info("Cuenta version 1: {}", v1);
+            log.info("Cuenta version 2: {}", v2);
+            csvService.saveCsv();
+            log.info("========= END =========");
+        } catch (IOException e) {
+            log.info("Error en la lectura de archivos :{}", e.getMessage());
+        }
+    }
 
     String getVersion(String pathXml) throws ParserConfigurationException, IOException, SAXException, TransformerException {
 

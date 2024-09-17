@@ -102,7 +102,7 @@ public class CtsService {
         System.out.println("GUARDANDO EN BASE DE DATOS");
         exportService.saveAll();
 
-        System.out.println("########## PROCESO FINALIZADO #########");
+       log.info("########## PROCESO FINALIZADO #########");
     }
 
 

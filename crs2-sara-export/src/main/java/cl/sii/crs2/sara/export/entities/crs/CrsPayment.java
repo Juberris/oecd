@@ -1,9 +1,7 @@
 package cl.sii.crs2.sara.export.entities.crs;
 
-import lombok.Data;
-
 import jakarta.persistence.*;
-import java.math.BigDecimal;
+import lombok.Data;
 
 @Data
 @Entity
@@ -11,20 +9,19 @@ import java.math.BigDecimal;
 public class CrsPayment {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_payment_crdw")
+    @Column(name = "crs_payment_id")
     Long idPayment;
 
-    @Column(name = "payment_type_crdw")
-    String paymentType;
-    @Column(name = "pay_currency_crdw")
-    String payCurrency;
-    @Column(name = "payment_crdw")
-    BigDecimal payment;
+
+    String type;
+    @Column(name = "curr_code")
+    String currCode;
+    @Column(name = "payment_amnt")
+    String paymentAmnt;
 
 
     @ManyToOne
-    @JoinColumn(name = "id_account_crdw", referencedColumnName = "id_account_crdw", foreignKey = @ForeignKey(name = "FK_CRS_PAY"))
-    CrsAccount crsAccount;
+    @JoinColumn(name = "crs_account_report_id", referencedColumnName = "crs_account_report_id", foreignKey = @ForeignKey(name = "FK_CRS_PAY"))
+    CrsAccountReport crsAccountReport;
 
 }

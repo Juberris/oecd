@@ -1,5 +1,6 @@
 package cl.sii.cts2.data.export.entities.crs;
 
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,28 +12,29 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "CRS_ACCOUNT_HOLDER")
-public class CrsAccountHolder {
+@Table(name = "CRS_CONTROLLING_PERSON")
+public class CrsControllingPerson {
+
     @Id
-    @Column(name = "crs_account_holder_id")
-    Long crsAccountHolderId;
+    @Column(name = "crs_controlling_person_id")
+    Long controllingPersonId;
+
+    @Column(name = "ctrlg_person_type")
+    String ctrlgPersonType;
 
     @Column(name = "res_country_code")
     String resCountryCode;
-    @Column(name = "acc_in")
-    String accIN;
-    @Column(name = "acc_tin")
-    String accTIN;
     @Column(name = "issued_by")
     String issuedBy;
-    @Column(name = "first_name")
+    @Column(name = "tin")
+    String TIN;
+    @Column(name = "firs_tname")
     String firstName;
     @Column(name = "middle_name")
     String middleName;
     @Column(name = "last_name")
     String lastName;
-    @Column(name = "acct_holder_type")
-    String acctHolderType;
+    @Column(name = "nationality")
     String nationality;
     @Column(name = "birth_date")
     String birthDate;
@@ -45,15 +47,15 @@ public class CrsAccountHolder {
     @Column(name = "birth_former_country_name")
     String birthFormerCountryName;
 
-    @OneToOne(mappedBy = "crsAccountHolder")
+    @ManyToOne
+    @JoinColumn(name = "crs_account_report_id", referencedColumnName = "crs_account_report_id", foreignKey = @ForeignKey(name = "FK_ACC_CTRLPERS"))
     private CrsAccountReport crsAccountReport;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsAccountHolder")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsControllingPerson")
     @ToString.Exclude
     List<CrsAddress> crsAddressList = new ArrayList<>();
-
     public void addAdress(CrsAddress a){
         crsAddressList.add(a);
-        a.setCrsAccountHolder(this);
+        a.setCrsControllingPerson(this);
     }
 }

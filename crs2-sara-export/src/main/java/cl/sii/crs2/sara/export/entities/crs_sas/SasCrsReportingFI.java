@@ -1,10 +1,7 @@
-package cl.sii.crs2.sara.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs_sas;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,8 +12,8 @@ import java.util.List;
 @ToString
 @RequiredArgsConstructor
 @Entity
-@Table(name = "CRS_REPORTING_FI",indexes = { @Index(name = "idx_fi_message_ref_id", columnList = "message_ref_id") })
-public class CrsReportingFI {
+@Table(name = "SAS_CRS_REPORTING_FI")
+public class SasCrsReportingFI {
 
     @Id
     @Column(name="crs_reporting_id")
@@ -49,12 +46,12 @@ public class CrsReportingFI {
     @Column(name = "updated_by")
     String updatedBy;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsReportingFI")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "sasCrsReportingFI")
     @ToString.Exclude
-    List<CrsAddress> crsAddressList = new ArrayList<>();
+    List<SasCrsAddress> sasCrsAddressList = new ArrayList<>();
 
-    public void addAdress(CrsAddress a){
-        crsAddressList.add(a);
-        a.setCrsReportingFI(this);
+    public void addAdress(SasCrsAddress a){
+        sasCrsAddressList.add(a);
+        a.setSasCrsReportingFI(this);
     }
 }

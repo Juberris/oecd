@@ -1,10 +1,8 @@
-package cl.sii.cts2.data.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "CRS_ACCOUNT_REPORT")
+@Table(name = "CRS_ACCOUNT_REPORT",indexes = { @Index(name = "idx_ac_message_ref_id", columnList = "message_ref_id") })
 public class CrsAccountReport {
 
     @Id

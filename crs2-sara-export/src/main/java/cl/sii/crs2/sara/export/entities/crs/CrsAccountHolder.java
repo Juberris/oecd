@@ -1,4 +1,4 @@
-package cl.sii.cts2.data.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -6,7 +6,9 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -56,4 +58,24 @@ public class CrsAccountHolder {
         crsAddressList.add(a);
         a.setCrsAccountHolder(this);
     }
+
+    @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "ACCOUNTHOLDER_RCC",  joinColumns = @JoinColumn(name = "crs_account_holder_id"), foreignKey = @ForeignKey(name = "FK_AH_RCC1"))
+    @Column(name = "acc_res_country_code", nullable = false)
+    private Set<String> resCountryCodeSet =new HashSet<>();
+
+    @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "ACCOUNTHOLDER_NATIONALY",  joinColumns = @JoinColumn(name = "crs_account_holder_id"), foreignKey = @ForeignKey(name = "FK_AH_RNAT1"))
+    @Column(name = "acc_nationality", nullable = false)
+    private Set<String> nationalitySet =new HashSet<>();
+
+    @ElementCollection
+    @CollectionTable(name = "ACCOUNTHOLDER_TIN", joinColumns = @JoinColumn(name = "crs_account_holder_id"), foreignKey = @ForeignKey(name = "FK_AH_RTIN1"))
+    private Set<TinEmbeddable> TINSet=new HashSet<>();;
+
+//    @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
+//    @CollectionTable(name = "ACCOUNTHOLDER_TIN",  joinColumns = @JoinColumn(name = "crs_account_holder_id"), foreignKey = @ForeignKey(name = "FK_AH_RTIN1"))
+//    @Column(name = "acc_tin", nullable = false)
+//    private Set<String> TINSet =new HashSet<>();
+
 }

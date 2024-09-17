@@ -1,4 +1,4 @@
-package cl.sii.crs2.sara.export.entities.crs;
+package cl.sii.crs2.sara.export.entities.crs_sas;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,17 +13,19 @@ import java.util.Date;
 @ToString
 @RequiredArgsConstructor
 @Entity
-@Table(name = "CRS_ADDRESS")
-public class CrsAddress {
+@Table(name = "SAS_CRS_ADDRESS")
+public class SasCrsAddress {
 
     @Id
-    @Column(name = "crs_address_id")
-    Long crsAddressId;
+    @Column(name = "id_address")
+    Long idAddress;
 
     @Column(name = "country_code")
     String CountryCode;
     @Column(name = "address_free",length = 2000)
     String AddressFree;
+    @Column(name = "address_fix",length = 2000)
+    String AddressFix;
     @Column(name = "address_fix_street",length = 2000)
     String addressFixStreet;
     @Column(name = "address_fix_building_identifier")
@@ -53,14 +55,6 @@ public class CrsAddress {
     String updatedBy;
 
     @ManyToOne
-    @JoinColumn(name = "crs_reporting_id", referencedColumnName = "crs_reporting_id", foreignKey = @ForeignKey(name = "FK_CRS_ADD"))
-    CrsReportingFI crsReportingFI;
-
-    @ManyToOne
-    @JoinColumn(name = "crs_account_holder_id", referencedColumnName = "crs_account_holder_id", foreignKey = @ForeignKey(name = "FK_CRS_ACC"))
-    CrsAccountHolder crsAccountHolder;
-
-    @ManyToOne
-    @JoinColumn(name = "crs_controlling_person_id", referencedColumnName = "crs_controlling_person_id", foreignKey = @ForeignKey(name = "FK_CRS_CPERSO"))
-    CrsControllingPerson crsControllingPerson;
+    @JoinColumn(name = "crs_reporting_id", referencedColumnName = "crs_reporting_id", foreignKey = @ForeignKey(name = "FK_SASCRS_ADD"))
+    SasCrsReportingFI sasCrsReportingFI;
 }

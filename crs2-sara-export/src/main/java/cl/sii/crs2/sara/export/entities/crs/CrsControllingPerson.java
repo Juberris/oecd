@@ -1,46 +1,61 @@
 package cl.sii.crs2.sara.export.entities.crs;
 
-import lombok.Data;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter
+@Setter
 @Entity
 @Table(name = "CRS_CONTROLLING_PERSON")
 public class CrsControllingPerson {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_controlling_person_crdw")
-    Long IdControllingPerson;
+    @Column(name = "crs_controlling_person_id")
+    Long controllingPersonId;
 
+    @Column(name = "ctrlg_person_type")
+    String ctrlgPersonType;
 
-    @Column(name = "cp_tin_country_crdw")
-    String cpTinCountry;
-    @Column(name = "cp_tin_crdw")
-    String cpTin;
-    @Column(name = "cp_firstname_crdw")
-    String cpFirstname;
-    @Column(name = "cp_middlename_crdw")
-    String cpMiddlename;
-    @Column(name = "cp_lastname_crdw")
-    String cpLastname;
-    @Column(name = "cp_address_countrycode")
-    String cpAddressCountrycode;
-    @Column(name = "cp_addressfix_street_crdw")
-    String cpAddressfixStreet;
-    @Column(name = "cp_addressfix_city_crdw")
-    String cpAddressfixCity;
-    @Column(name = "cp_addressfree_crdw")
-    String cpAddressfree;
-    @Column(name = "cp_birth_date_crdw")
-    String cpBirthDate;
-    @Column(name = "cp_birth_country_info_crdw")
-    String cpBirthCountryInfo;
-
+    @Column(name = "res_country_code")
+    String resCountryCode;
+    @Column(name = "issued_by")
+    String issuedBy;
+    @Column(name = "tin")
+    String TIN;
+    @Column(name = "firs_tname")
+    String firstName;
+    @Column(name = "middle_name")
+    String middleName;
+    @Column(name = "last_name")
+    String lastName;
+    @Column(name = "nationality")
+    String nationality;
+    @Column(name = "birth_date")
+    String birthDate;
+    @Column(name = "birth_city")
+    String birthCity;
+    @Column(name = "birth_city_subentity")
+    String birthCitySubentity;
+    @Column(name = "birth_country_code")
+    String birthCountryCode;
+    @Column(name = "birth_former_country_name")
+    String birthFormerCountryName;
 
     @ManyToOne
-    @JoinColumn(name = "id_account_crdw", referencedColumnName = "id_account_crdw", foreignKey = @ForeignKey(name = "FK_CRS_CPERSON"))
-    CrsAccount crsAccount;
+    @JoinColumn(name = "crs_account_report_id", referencedColumnName = "crs_account_report_id", foreignKey = @ForeignKey(name = "FK_ACC_CTRLPERS"))
+    private CrsAccountReport crsAccountReport;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "crsControllingPerson")
+    @ToString.Exclude
+    List<CrsAddress> crsAddressList = new ArrayList<>();
+    public void addAdress(CrsAddress a){
+        crsAddressList.add(a);
+        a.setCrsControllingPerson(this);
+    }
 }

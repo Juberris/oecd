@@ -50,7 +50,7 @@ public class CsvService {
                 while (rsTables.next()) {
                     String name = rsTables.getString("TABLE_NAME");
                     if (jdbcTemplate.queryForObject("SELECT COUNT(*) FROM " + name, Integer.class) > 0) {
-                        if (name.contains("CRS_")) {
+                        if (name.contains("SAS_CRS_")) {
                             tables.add(name);
                         }
                     }
@@ -66,7 +66,7 @@ public class CsvService {
             ExecutorService pool = Executors.newFixedThreadPool(tables.size());
             for (String name : tables) {
                 pool.execute(() -> {
-                    File csv = new File(dataOutDir, name + ".csv");
+                    File csv = new File(dataOutDir, name.substring(4) + ".csv");
                     log.warn("BGN Generando csv en " + csv);
 
                     jdbcTemplate.query("SELECT * FROM " + name + " ORDER BY 1,2", new RowCallbackHandler() {
